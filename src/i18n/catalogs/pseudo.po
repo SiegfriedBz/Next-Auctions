@@ -24,16 +24,16 @@ msgstr ""
 #~ msgid "{totalAuctions, plural, =0 {auction} one {auction} other {auctions}}"
 #~ msgstr ""
 
-#. placeholder {0}: isCurrentUserStats? "auction" : "total auction"
-#. placeholder {1}: isCurrentUserStats? "auctions" : "total auctions"
+#. placeholder {0}: isCurrentUserStats ? "auction" : "total auction"
+#. placeholder {1}: isCurrentUserStats ? "auctions" : "total auctions"
 msgid "{totalAuctions, plural, =0 {No auction yet} one {{0}} other {{1}}}"
 msgstr ""
 
 #~ msgid "{totalBids, plural, =0 {bid} one {bid} other {bids}}"
 #~ msgstr ""
 
-#. placeholder {0}: isCurrentUserStats? "bid" : "total bid"
-#. placeholder {1}: isCurrentUserStats? "bids" : "total bids"
+#. placeholder {0}: isCurrentUserStats ? "bid" : "total bid"
+#. placeholder {1}: isCurrentUserStats ? "bids" : "total bids"
 msgid "{totalBids, plural, =0 {No bid yet} one {{0}} other {{1}}}"
 msgstr ""
 
