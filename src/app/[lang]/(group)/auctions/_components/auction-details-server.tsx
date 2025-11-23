@@ -146,7 +146,7 @@ const AuctionDetailsCard: FC<CardProps> = (props) => {
             <div className="flex max-sm:justify-center items-center w-full sm:w-fit sm:ml-auto mt-auto gap-x-2">
               <Badge
                 variant="secondary"
-                className="px-2 py-0.5 sm:px-3 sm:py-1 font-bold text-foreground text-sm sm:text-base"
+                className="px-2 py-0.5 sm:px-3 sm:py-1 font-bold text-foreground text-sm sm:text-base whitespace-normal"
               >
                 <Trans>Log in to access more features.</Trans>
               </Badge>

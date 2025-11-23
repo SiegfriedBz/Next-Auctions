@@ -5,6 +5,7 @@ import { BellIcon, BellRingIcon } from "lucide-react";
 import { type FC, memo, useMemo } from "react";
 import { Badge } from "@/components/ui/badge";
 import { NavigationMenuLink } from "@/components/ui/navigation-menu";
+import { Separator } from "@/components/ui/separator";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import {
   type Notification,
@@ -66,7 +67,10 @@ export const NotificationMenuContent: FC<Props> = (props) => {
   }, [notificationsByType, t]);
 
   return (
-    <Tabs defaultValue="payments" className="w-full px-1">
+    <Tabs
+      defaultValue="payments"
+      className="w-full max-[425px]:min-w-[84vw] max-sm:min-w-[76vw] max-md:min-w-[54vw] min-w-[32vw] h-full min-h-[32vh] p-1"
+    >
       <div className="flex justify-center items-center gap-x-2 mt-2">
         {count > 0 ? (
           <BellRingIcon className="size-4 opacity-90" />
@@ -76,40 +80,46 @@ export const NotificationMenuContent: FC<Props> = (props) => {
         <Trans>Notifications</Trans>
       </div>
 
-      <TabsList className="w-full">
-        {tabsList.map((tab) => {
-          const count = tab.notifications.length;
-          return (
-            <TabsTrigger
-              key={tab.value}
-              value={tab.value}
-              className="cursor-pointer opacity-80"
-            >
-              {tab.label}
-              <Badge
-                className={cn(
-                  "size-4 text-xs",
-                  count > 0 ? "opacity-100" : "opacity-50",
-                )}
+      <div className="max-xl:min-h-[9vh] min-w-full">
+        <TabsList className="w-full flex gap-1 flex-wrap">
+          {tabsList.map((tab) => {
+            const count = tab.notifications.length;
+            return (
+              <TabsTrigger
+                key={tab.value}
+                value={tab.value}
+                className="cursor-pointer opacity-80"
               >
-                {count}
-              </Badge>
-            </TabsTrigger>
+                {tab.label}
+                <Badge
+                  className={cn(
+                    "size-4 text-xs",
+                    count > 0 ? "opacity-100" : "opacity-50",
+                  )}
+                >
+                  {count}
+                </Badge>
+              </TabsTrigger>
+            );
+          })}
+        </TabsList>
+      </div>
+
+      <Separator className="my-2" />
+
+      <div>
+        {tabsList.map((tab) => {
+          return (
+            <TabsContent key={`content-${tab.value}`} value={tab.value}>
+              <MemoTabContentInner
+                notifications={tab.notifications}
+                label={tab.defaultLabel}
+                onMarkNotificationAsSeen={onMarkNotificationAsSeen}
+              />
+            </TabsContent>
           );
         })}
-      </TabsList>
-
-      {tabsList.map((tab) => {
-        return (
-          <TabsContent key={`content-${tab.value}`} value={tab.value}>
-            <MemoTabContentInner
-              notifications={tab.notifications}
-              label={tab.defaultLabel}
-              onMarkNotificationAsSeen={onMarkNotificationAsSeen}
-            />
-          </TabsContent>
-        );
-      })}
+      </div>
     </Tabs>
   );
 };

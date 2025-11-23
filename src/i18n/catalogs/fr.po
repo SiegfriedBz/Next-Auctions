@@ -15,777 +15,600 @@ msgstr ""
 
 #. js-lingui-explicit-id
 msgid "/+Z5u4"
-msgstr ""
+msgstr "/+Z5u4"
 
 #. placeholder {0}: auctionName ?? id
 msgid "{0}"
-msgstr ""
+msgstr "{0}"
 
-#~ msgid "{totalAuctions, plural, =0 {auction} one {auction} other {auctions}}"
-#~ msgstr ""
-
-#. placeholder {0}: isCurrentUserStats? "auction" : "total auction"
-#. placeholder {1}: isCurrentUserStats? "auctions" : "total auctions"
+#. placeholder {0}: isCurrentUserStats ? "auction" : "total auction"
+#. placeholder {1}: isCurrentUserStats ? "auctions" : "total auctions"
 msgid "{totalAuctions, plural, =0 {No auction yet} one {{0}} other {{1}}}"
-msgstr ""
+msgstr "{totalAuctions, plural, =0 {Aucune enchère pour le moment} one {{0}} other {{1}}}"
 
-#~ msgid "{totalBids, plural, =0 {bid} one {bid} other {bids}}"
-#~ msgstr ""
-
-#. placeholder {0}: isCurrentUserStats? "bid" : "total bid"
-#. placeholder {1}: isCurrentUserStats? "bids" : "total bids"
+#. placeholder {0}: isCurrentUserStats ? "bid" : "total bid"
+#. placeholder {1}: isCurrentUserStats ? "bids" : "total bids"
 msgid "{totalBids, plural, =0 {No bid yet} one {{0}} other {{1}}}"
-msgstr ""
+msgstr "{totalBids, plural, =0 {Aucune offre pour le moment} one {{0}} other {{1}}}"
 
 msgid "{totalUsers, plural, =0 {No user yet} one {total user} other {total users}}"
-msgstr ""
-
-#~ msgid "{totalUsers, plural, =0 {user} one {user} other {users}}"
-#~ msgstr ""
-
-#~ msgid "A set of layered sections of content—known as tab panels—that are displayed one at a time."
-#~ msgstr ""
-
-#~ msgid "Actions"
-#~ msgstr ""
+msgstr "{totalUsers, plural, =0 {Aucun utilisateur pour le moment} one {utilisateur total} other {utilisateurs totaux}}"
 
 msgid "Already have an account ?"
-msgstr ""
-
-#~ msgid "Already have an account?"
-#~ msgstr ""
+msgstr "Vous avez déjà un compte ?"
 
 msgid "Amount"
-msgstr ""
+msgstr "Montant"
 
 msgid "Amout paid"
-msgstr ""
+msgstr "Montant payé"
 
 msgid "Art"
-msgstr ""
+msgstr "Art"
 
 msgid "Ascending"
-msgstr ""
+msgstr "Croissant"
 
 msgid "auction"
-msgstr ""
+msgstr "enchère"
 
 msgid "auctions"
-msgstr ""
+msgstr "enchères"
 
 msgid "Auctions"
-msgstr ""
-
-#~ msgid "Auctions won"
-#~ msgstr ""
+msgstr "Enchères"
 
 msgid "Automotive"
-msgstr ""
+msgstr "Automobile"
 
 msgid "Avatar uploaded successfully!"
-msgstr ""
+msgstr "Avatar téléversé avec succès !"
 
 msgid "Back to auctions"
-msgstr ""
+msgstr "Retour aux enchères"
 
 msgid "bid"
-msgstr ""
+msgstr "offre"
 
 msgid "Bid"
-msgstr ""
+msgstr "Offre"
 
 msgid "Bid on auction"
-msgstr ""
+msgstr "Enchérir sur l’enchère"
 
 msgid "Bid placed successfully!"
-msgstr ""
+msgstr "Offre placée avec succès !"
 
 msgid "bids"
-msgstr ""
+msgstr "offres"
 
 msgid "Bids"
-msgstr ""
+msgstr "Offres"
 
 msgid "Browse Auctions"
-msgstr ""
+msgstr "Parcourir les enchères"
 
 msgid "browse files"
-msgstr ""
+msgstr "parcourir les fichiers"
 
 msgid "Built to exacting standards using only the best quality hardware, pickups and tone woods..."
-msgstr ""
+msgstr "Conçu selon des normes exigeantes en utilisant uniquement du matériel, des micros et des bois de tonalité de la meilleure qualité…"
 
 msgid "Cancel"
-msgstr ""
-
-#~ msgid "Cancelled"
-#~ msgstr ""
-
-#~ msgid "category"
-#~ msgstr ""
+msgstr "Annuler"
 
 msgid "Category"
-msgstr ""
+msgstr "Catégorie"
 
 msgid "Category *"
-msgstr ""
+msgstr "Catégorie *"
 
 msgid "Choose a language"
-msgstr "Selectionner une langue"
+msgstr "Sélectionner une langue"
 
 msgid "Click on Create Auction"
-msgstr ""
+msgstr "Cliquez sur Créer une enchère"
 
 msgid "Click on Update Auction"
-msgstr ""
+msgstr "Cliquez sur Mettre à jour l’enchère"
 
 msgid "Click on Update your profile"
-msgstr ""
+msgstr "Cliquez sur Mettre à jour votre profil"
 
 msgid "Closed"
-msgstr ""
+msgstr "Fermée"
 
 msgid "Collectibles"
-msgstr ""
+msgstr "Objets de collection"
 
 msgid "Contact owner"
-msgstr ""
+msgstr "Contacter le propriétaire"
 
 msgid "Continue"
-msgstr ""
-
-#~ msgid "Create"
-#~ msgstr ""
-
-#~ msgid "Create account"
-#~ msgstr ""
-
-#~ msgid "Create Account"
-#~ msgstr ""
+msgstr "Continuer"
 
 msgid "Create auction"
-msgstr ""
+msgstr "Créer une enchère"
 
 msgid "Create Auction"
-msgstr ""
+msgstr "Créer une enchère"
 
 msgid "Create bid"
-msgstr ""
+msgstr "Créer une offre"
 
 msgid "Create your account."
-msgstr ""
+msgstr "Créez votre compte."
 
 msgid "Create your auction"
-msgstr ""
+msgstr "Créez votre enchère"
 
 msgid "Created at"
-msgstr ""
-
-#~ msgid "Creating account..."
-#~ msgstr ""
+msgstr "Créée le"
 
 msgid "Creating auction..."
-msgstr ""
+msgstr "Création de l’enchère…"
 
 msgid "Creating bid..."
-msgstr ""
-
-#~ msgid "Current Bid"
-#~ msgstr ""
+msgstr "Création de l’offre…"
 
 msgid "Dark"
-msgstr ""
+msgstr "Sombre"
 
 msgid "Date"
-msgstr ""
+msgstr "Date"
 
 msgid "Descending"
-msgstr ""
+msgstr "Décroissant"
 
 msgid "Description"
-msgstr ""
+msgstr "Description"
 
 msgid "Description *"
-msgstr ""
+msgstr "Description *"
 
 msgid "Deutsch"
-msgstr ""
+msgstr "Deutsch"
 
 msgid "Discover, Bid & Win Unique Auctions"
-msgstr ""
+msgstr "Découvrez, enchérissez et remportez des enchères uniques"
 
 msgid "Don't have an account ? "
-msgstr ""
-
-#~ msgid "Don't have an account? "
-#~ msgstr ""
+msgstr "Vous n’avez pas de compte ? "
 
 msgid "Draft"
-msgstr ""
+msgstr "Brouillon"
 
 msgid "Drop files here or"
-msgstr ""
+msgstr "Déposez des fichiers ici ou"
 
 msgid "Edit"
-msgstr ""
+msgstr "Modifier"
 
 msgid "Edit my profile"
-msgstr ""
+msgstr "Modifier mon profil"
 
 msgid "Electronics"
-msgstr ""
+msgstr "Électronique"
 
 msgid "Email"
-msgstr ""
+msgstr "Email"
 
 msgid "End at"
-msgstr ""
-
-#~ msgid "End Date"
-#~ msgstr ""
+msgstr "Se termine le"
 
 msgid "Ended"
-msgstr ""
+msgstr "Terminée"
 
 msgid "Ends"
-msgstr ""
+msgstr "Se termine"
 
 msgid "Ends in"
-msgstr ""
+msgstr "Se termine dans"
 
 msgid "English"
-msgstr ""
+msgstr "English"
 
 msgid "Enter your email and password to access."
-msgstr ""
+msgstr "Entrez votre email et votre mot de passe pour accéder."
 
 msgid "Failed to upload avatar. Please try again."
-msgstr ""
-
-#~ msgid "Failed to upload image. Please try again."
-#~ msgstr ""
+msgstr "Échec du téléversement de l’avatar. Veuillez réessayer."
 
 msgid "Failed to upload one or more images. Please try again."
-msgstr ""
+msgstr "Échec du téléversement d’une ou plusieurs images. Veuillez réessayer."
 
 msgid "Fashion"
-msgstr ""
+msgstr "Mode"
 
 msgid "Fill in your details to create a new account."
-msgstr ""
+msgstr "Remplissez vos informations pour créer un nouveau compte."
 
 msgid "Fill the form below to create a new auction"
-msgstr ""
+msgstr "Remplissez le formulaire ci-dessous pour créer une nouvelle enchère"
 
 msgid "Fill the form below to update your auction"
-msgstr ""
-
-#~ msgid "Fill the form below to update your draft auction"
-#~ msgstr ""
+msgstr "Remplissez le formulaire ci-dessous pour mettre à jour votre enchère"
 
 msgid "Fill the form below to update your profile"
-msgstr ""
+msgstr "Remplissez le formulaire ci-dessous pour mettre à jour votre profil"
 
 msgid "Filter auctions"
-msgstr ""
-
-#~ msgid "Filtres"
-#~ msgstr ""
+msgstr "Filtrer les enchères"
 
 msgid "First name"
-msgstr ""
+msgstr "Prénom"
 
 msgid "First name *"
-msgstr ""
+msgstr "Prénom *"
 
 msgid "Français"
-msgstr ""
-
-#~ msgid "Give a category to your auction"
-#~ msgstr ""
+msgstr "Français"
 
 msgid "Give a description to your auction"
-msgstr ""
+msgstr "Donnez une description à votre enchère"
 
 msgid "Give a Starting Price to your auction"
-msgstr ""
-
-#~ msgid "Give a startingPrice to your auction"
-#~ msgstr ""
+msgstr "Donnez un prix de départ à votre enchère"
 
 msgid "Give a title to your auction"
-msgstr ""
+msgstr "Donnez un titre à votre enchère"
 
 msgid "Highest Bid"
-msgstr ""
+msgstr "Offre la plus élevée"
 
 msgid "Home"
-msgstr ""
-
-#~ msgid "Image uploaded successfully!"
-#~ msgstr ""
+msgstr "Accueil"
 
 msgid "Images"
-msgstr ""
+msgstr "Images"
 
 msgid "Images uploaded successfully!"
-msgstr ""
+msgstr "Images téléversées avec succès !"
 
 msgid "Join our community-driven platform to find exclusive deals and one-of-a-kind items."
-msgstr ""
+msgstr "Rejoignez notre plateforme communautaire pour trouver des offres exclusives et des objets uniques."
 
 msgid "Language"
 msgstr "Langue"
 
 msgid "Last month"
-msgstr ""
+msgstr "Le mois dernier"
 
 msgid "Last name"
-msgstr ""
-
-#~ msgid "Last name *"
-#~ msgstr ""
+msgstr "Nom"
 
 msgid "Last Name *"
-msgstr ""
+msgstr "Nom *"
 
 msgid "Last week"
-msgstr ""
+msgstr "La semaine dernière"
 
 msgid "Last year"
-msgstr ""
+msgstr "L’année dernière"
 
 msgid "Light"
-msgstr ""
-
-#~ msgid "Liste"
-#~ msgstr ""
-
-#~ msgid "Loading uploader..."
-#~ msgstr ""
+msgstr "Clair"
 
 msgid "Log in to access more features."
-msgstr ""
+msgstr "Connectez-vous pour accéder à plus de fonctionnalités."
 
 msgid "Log out"
-msgstr ""
+msgstr "Se déconnecter"
 
 msgid "Logging in..."
-msgstr ""
+msgstr "Connexion…"
 
 msgid "Login"
-msgstr ""
-
-#~ msgid "Me"
-#~ msgstr ""
+msgstr "Connexion"
 
 msgid "Music"
-msgstr ""
-
-#~ msgid "My Account"
-#~ msgstr ""
+msgstr "Musique"
 
 msgid "My auctions"
-msgstr ""
+msgstr "Mes enchères"
 
 msgid "My Auctions"
-msgstr ""
+msgstr "Mes enchères"
 
 msgid "My payments"
-msgstr ""
+msgstr "Mes paiements"
 
 msgid "My profile"
-msgstr ""
+msgstr "Mon profil"
 
 msgid "My Profile"
-msgstr ""
-
-#~ msgid "My Settings"
-#~ msgstr ""
+msgstr "Mon profil"
 
 msgid "New"
-msgstr ""
-
-#~ msgid "Next"
-#~ msgstr ""
-
-#~ msgid "No auction won"
-#~ msgstr ""
-
-#~ msgid "No bid"
-#~ msgstr ""
+msgstr "Nouveau"
 
 msgid "No description provided."
-msgstr ""
-
-#~ msgid "No new auction won"
-#~ msgstr ""
+msgstr "Aucune description fournie."
 
 msgid "No new bid"
-msgstr ""
+msgstr "Aucune nouvelle offre"
 
 msgid "No new payment"
-msgstr ""
+msgstr "Aucun nouveau paiement"
 
 msgid "No new won auction"
-msgstr ""
-
-#~ msgid "No notification"
-#~ msgstr ""
-
-#~ msgid "No payment"
-#~ msgstr ""
+msgstr "Aucune nouvelle enchère gagnée"
 
 msgid "No results."
-msgstr ""
+msgstr "Aucun résultat."
 
 msgid "Notification card with link"
-msgstr ""
+msgstr "Carte de notification avec lien"
 
 msgid "Notification marked as seen"
-msgstr ""
+msgstr "Notification marquée comme vue"
 
 msgid "Notifications"
-msgstr ""
+msgstr "Notifications"
 
 msgid "Open"
-msgstr ""
+msgstr "Ouverte"
 
 msgid "Open menu"
-msgstr ""
+msgstr "Ouvrir le menu"
 
 msgid "Password"
-msgstr ""
+msgstr "Mot de passe"
 
 msgid "Payment"
-msgstr ""
+msgstr "Paiement"
 
 msgid "Payment Cancelled."
-msgstr ""
+msgstr "Paiement annulé."
 
 msgid "Payments"
-msgstr ""
-
-#~ msgid "Payments done"
-#~ msgstr ""
-
-#~ msgid "Payments done aggregated by period"
-#~ msgstr ""
+msgstr "Paiements"
 
 msgid "Payments made"
-msgstr ""
+msgstr "Paiements effectués"
 
 msgid "Payments received"
-msgstr ""
-
-#~ msgid "Payments received aggregated by period"
-#~ msgstr ""
+msgstr "Paiements reçus"
 
 msgid "Payments you have made over time"
-msgstr ""
+msgstr "Vos paiements effectués au fil du temps"
 
 msgid "Payments you have received over time"
-msgstr ""
+msgstr "Vos paiements reçus au fil du temps"
 
 msgid "Payments you made"
-msgstr ""
-
-#~ msgid "Payments you made aggregated by period"
-#~ msgstr ""
+msgstr "Vos paiements effectués"
 
 msgid "Payments you received"
-msgstr ""
-
-#~ msgid "Payments you received aggregated by period"
-#~ msgstr ""
+msgstr "Vos paiements reçus"
 
 msgid "Place your bid"
-msgstr ""
+msgstr "Placez votre offre"
 
 msgid "Please log in to create auctions."
-msgstr ""
-
-#~ msgid "Previous"
-#~ msgstr ""
+msgstr "Veuillez vous connecter pour créer des enchères."
 
 msgid "Product image"
-msgstr ""
-
-#~ msgid "Profile"
-#~ msgstr ""
-
-#~ msgid "Retry the payment here"
-#~ msgstr ""
+msgstr "Image du produit"
 
 msgid "Retry the payment here."
-msgstr ""
+msgstr "Réessayez le paiement ici."
 
 msgid "Select a category"
-msgstr ""
+msgstr "Sélectionnez une catégorie"
 
 msgid "Select a category for your auction"
-msgstr ""
+msgstr "Sélectionnez une catégorie pour votre enchère"
 
 msgid "Select a range"
-msgstr ""
+msgstr "Sélectionnez une période"
 
 msgid "Select a status"
-msgstr ""
+msgstr "Sélectionnez un statut"
 
 msgid "Select a status for your auction"
-msgstr ""
+msgstr "Sélectionnez un statut pour votre enchère"
 
 msgid "Select date"
-msgstr ""
-
-#~ msgid "Séléctionner une langue"
-#~ msgstr ""
+msgstr "Sélectionnez une date"
 
 msgid "Sending bid..."
-msgstr ""
+msgstr "Envoi de l’offre…"
 
 msgid "Set a date to end your auction"
-msgstr ""
-
-#~ msgid "Settings"
-#~ msgstr ""
-
-#~ msgid "Sign in"
-#~ msgstr ""
+msgstr "Définissez une date de fin pour votre enchère"
 
 msgid "Sign up"
-msgstr ""
-
-#~ msgid "Sign Up"
-#~ msgstr ""
-
-#~ msgid "Signing in..."
-#~ msgstr ""
+msgstr "Inscription"
 
 msgid "Signing up..."
-msgstr ""
+msgstr "Inscription…"
 
 msgid "Since signup"
-msgstr ""
+msgstr "Depuis l’inscription"
 
 msgid "Something went wrong, please try again later."
-msgstr ""
+msgstr "Une erreur est survenue, veuillez réessayer plus tard."
 
 msgid "Sort auctions"
-msgstr ""
+msgstr "Trier les enchères"
 
 msgid "Sort by"
-msgstr ""
+msgstr "Trier par"
 
 msgid "Sort order"
-msgstr ""
+msgstr "Ordre de tri"
 
 msgid "Sports"
-msgstr ""
+msgstr "Sports"
 
 msgid "Started"
-msgstr ""
-
-#~ msgid "Starting Date"
-#~ msgstr ""
+msgstr "Commencée"
 
 msgid "Starting Price"
-msgstr ""
+msgstr "Prix de départ"
 
 msgid "Starting Price *"
-msgstr ""
-
-#~ msgid "startingPrice"
-#~ msgstr ""
+msgstr "Prix de départ *"
 
 msgid "Status"
-msgstr ""
-
-#~ msgid "Success"
-#~ msgstr ""
+msgstr "Statut"
 
 msgid "Switch login/signup forms"
-msgstr ""
+msgstr "Changer de formulaire connexion/inscription"
 
 msgid "System"
-msgstr ""
+msgstr "Système"
 
 msgid "This auction has been won and paid for."
-msgstr ""
+msgstr "Cette enchère a été gagnée et payée."
 
 msgid "This auction has ended with no bids."
-msgstr ""
-
-#~ msgid "This auction has ended."
-#~ msgstr ""
+msgstr "Cette enchère s’est terminée sans aucune offre."
 
 msgid "This auction has ended. Winner is pending payment."
-msgstr ""
+msgstr "Cette enchère est terminée. Le gagnant doit encore payer."
 
 msgid "This auction is ongoing."
-msgstr ""
+msgstr "Cette enchère est en cours."
 
 msgid "This is your auction"
-msgstr ""
+msgstr "Ceci est votre enchère"
 
 msgid "This is your bid's amount."
-msgstr ""
+msgstr "Ceci est le montant de votre offre."
 
 msgid "This is your private password."
-msgstr ""
+msgstr "Ceci est votre mot de passe privé."
 
 msgid "This is your public display email."
-msgstr ""
+msgstr "Ceci est votre email public."
 
 msgid "This is your public display first name."
-msgstr ""
+msgstr "Ceci est votre prénom public."
 
 msgid "This is your public display last name."
-msgstr ""
+msgstr "Ceci est votre nom public."
 
 msgid "This is your public first name."
-msgstr ""
+msgstr "Ceci est votre prénom public."
 
 msgid "This is your public last name."
-msgstr ""
+msgstr "Ceci est votre nom public."
 
 msgid "Title"
-msgstr ""
+msgstr "Titre"
 
 msgid "Title *"
-msgstr ""
-
-#~ msgid "Toggle columns"
-#~ msgstr ""
+msgstr "Titre *"
 
 msgid "Toggle theme"
-msgstr ""
+msgstr "Changer le thème"
 
 msgid "total auctions"
-msgstr ""
+msgstr "enchères totales"
 
 msgid "total bids"
-msgstr ""
+msgstr "offres totales"
 
 msgid "Total paid"
-msgstr ""
+msgstr "Total payé"
 
 msgid "Total received"
-msgstr ""
+msgstr "Total reçu"
 
 msgid "total users"
-msgstr ""
+msgstr "utilisateurs totaux"
 
 msgid "Toys"
-msgstr ""
-
-#~ msgid "Track Auctions Effortlessly"
-#~ msgstr ""
+msgstr "Jouets"
 
 msgid "Track Auctions. Effortlessly"
-msgstr ""
+msgstr "Suivez vos enchères. Sans effort."
 
 msgid "Update auction"
-msgstr ""
-
-#~ msgid "Update Auction"
-#~ msgstr ""
-
-#~ msgid "Update my profile"
-#~ msgstr ""
+msgstr "Mettre à jour l’enchère"
 
 msgid "Update your auction"
-msgstr ""
+msgstr "Mettez à jour votre enchère"
 
 msgid "Update your profile"
-msgstr ""
+msgstr "Mettez à jour votre profil"
 
 msgid "Updating auction..."
-msgstr ""
+msgstr "Mise à jour de l’enchère…"
 
 msgid "Updating your profile..."
-msgstr ""
+msgstr "Mise à jour de votre profil…"
 
 msgid "Upload images?"
-msgstr ""
+msgstr "Téléverser des images ?"
 
 msgid "Upload up to 3 images"
-msgstr ""
+msgstr "Téléverser jusqu’à 3 images"
 
 msgid "Upload your avatar"
-msgstr ""
+msgstr "Téléverser votre avatar"
 
 msgid "Upload your new avatar?"
-msgstr ""
-
-#~ msgid "Uploading avatar..."
-#~ msgstr ""
+msgstr "Téléverser votre nouvel avatar ?"
 
 msgid "Uploading image..."
-msgstr ""
+msgstr "Téléversement de l’image…"
 
 msgid "user"
-msgstr ""
+msgstr "utilisateur"
 
 msgid "User profile card"
-msgstr ""
-
-#~ msgid "View"
-#~ msgstr ""
+msgstr "Carte de profil utilisateur"
 
 msgid "View auction"
-msgstr ""
+msgstr "Voir l’enchère"
 
 msgid "Welcome back!"
-msgstr ""
+msgstr "Bon retour !"
 
 msgid "Won auctions"
-msgstr ""
-
-#~ msgid "You are the Highest Bidder"
-#~ msgstr ""
+msgstr "Enchères gagnées"
 
 msgid "You did not pay this auction yet. Contact us for more information."
-msgstr ""
+msgstr "Vous n’avez pas encore payé cette enchère. Contactez-nous pour plus d’informations."
 
 msgid "You logged out successfully"
-msgstr ""
+msgstr "Déconnexion réussie"
 
 msgid "You successfully created your auction!"
-msgstr ""
+msgstr "Vous avez créé votre enchère avec succès !"
 
 msgid "You successfully paid this auction."
-msgstr ""
+msgstr "Vous avez payé cette enchère avec succès."
 
 msgid "You successfully signed in!"
-msgstr ""
+msgstr "Connexion réussie !"
 
 msgid "You successfully signed up!"
-msgstr ""
+msgstr "Inscription réussie !"
 
 msgid "You successfully updated your auction!"
-msgstr ""
+msgstr "Vous avez mis à jour votre enchère avec succès !"
 
 msgid "You successfully updated your profile!"
-msgstr ""
+msgstr "Vous avez mis à jour votre profil avec succès !"
 
 msgid "You won and paid for this auction."
-msgstr ""
-
-#~ msgid "You won this auction"
-#~ msgstr ""
+msgstr "Vous avez gagné et payé cette enchère."
 
 msgid "You won! Proceed to payment."
-msgstr ""
+msgstr "Vous avez gagné ! Procédez au paiement."
 
 msgid "You're currently the highest bidder!"
-msgstr ""
+msgstr "Vous êtes actuellement le meilleur enchérisseur !"
 
 msgid "Your image will be uploaded now, but it won't update your profile until you click “Update your profile”."
-msgstr ""
+msgstr "Votre image va être téléversée maintenant, mais votre profil ne sera pas mis à jour tant que vous n’aurez pas cliqué sur « Mettre à jour votre profil »."
 
 msgid "Your images will be uploaded now, but it won't be saved until you create your auction."
-msgstr ""
+msgstr "Vos images vont être téléversées maintenant, mais elles ne seront pas enregistrées tant que vous n’aurez pas créé votre enchère."
 
 msgid "Your transaction was not completed."
-msgstr ""
+msgstr "Votre transaction n’a pas été finalisée."
