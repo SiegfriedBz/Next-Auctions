@@ -13,7 +13,7 @@ export const Hero: FC = () => {
   const { locale: lang } = i18n;
 
   return (
-    <section className="flex flex-col items-center justify-between text-center min-h-[calc(100svh-8rem)] sm:min-h-[calc(100svh-12rem)]">
+    <section className="flex flex-col items-center justify-between text-center min-h-[calc(100svh-6rem)] sm:min-h-[calc(100svh-12rem)]">
       <div className="h-full sm:max-w-3xl mx-auto my-auto space-y-6">
         <TypographyH1>
           <Trans>Discover, Bid & Win Unique Auctions</Trans>
@@ -24,7 +24,7 @@ export const Hero: FC = () => {
             one-of-a-kind items.
           </Trans>
         </TypographyLead>
-        <div className="flex justify-center mt-8 gap-2 sm:gap-4">
+        <div className="flex justify-center flex-wrap mt-8 gap-2 sm:gap-4">
           <Button>
             <Link href={`/${lang}/auctions`}>
               <Trans>Browse Auctions</Trans>
