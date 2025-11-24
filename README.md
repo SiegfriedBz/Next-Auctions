@@ -1,6 +1,6 @@
 # ⚖️ GavL - Next Auctions – Real-Time Full-Stack Auction Platform
 
-A real-time auction platform built with Next.js, React, TypeScript, Supabase, and Stripe. Features live bidding, payments, notifications, and responsive design for mobile and desktop.
+A real-time auction platform built with Next.js, TypeScript, Supabase, I18n, and Stripe. Features live bidding, payments, notifications, translations, and responsive design.
 
 ## 🎥 Demo / Video Walkthrough
 
