@@ -1,10 +1,9 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
-
-  // to use Lingui macros
   experimental: {
+    globalNotFound: true,
+    // to use Lingui macros
     swcPlugins: [["@lingui/swc-plugin", {}]],
   },
   images: {
