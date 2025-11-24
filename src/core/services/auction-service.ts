@@ -23,7 +23,7 @@ export class AuctionService {
   ): Promise<ListingReturn<Auction>> {
     const {
       filterBy = {},
-      orderBy = { key: "createdAt", order: "asc" },
+      orderBy = { key: "createdAt", order: "desc" },
       pagination = { page: 0, size: 10 },
     } = params;
 
