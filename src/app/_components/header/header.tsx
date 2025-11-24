@@ -8,7 +8,7 @@ import { NavLinks } from "./nav-links";
 export const Header: FC = () => {
   return (
     <>
-      <header className="flex justify-between items-center h-28 sm:h-32 md:h-32 px-4 sm:px-16">
+      <header className="flex justify-between items-center h-20 sm:h-28 md:h-32 px-4 sm:px-16">
         <Logo />
         <NavLinks />
       </header>
