@@ -21,21 +21,29 @@ msgstr ""
 msgid "{0}"
 msgstr ""
 
+#. placeholder {0}: i18n._(msg`No auction yet`)
+#. placeholder {1}: i18n._( isCurrentUserStats ? msg`auction` : msg`total auction`, )
+#. placeholder {2}: i18n._( isCurrentUserStats ? msg`auctions` : msg`total auctions`, )
+msgid "{totalAuctions, plural, =0 {{0}} one {{1}} other {{2}}}"
+msgstr ""
+
 #~ msgid "{totalAuctions, plural, =0 {auction} one {auction} other {auctions}}"
 #~ msgstr ""
 
-#. placeholder {0}: isCurrentUserStats ? "auction" : "total auction"
-#. placeholder {1}: isCurrentUserStats ? "auctions" : "total auctions"
-msgid "{totalAuctions, plural, =0 {No auction yet} one {{0}} other {{1}}}"
+#~ msgid "{totalAuctions, plural, =0 {No auction yet} one {{0}} other {{1}}}"
+#~ msgstr ""
+
+#. placeholder {0}: i18n._(msg`No bid yet`)
+#. placeholder {1}: i18n._(isCurrentUserStats ? msg`bid` : msg`total bid`)
+#. placeholder {2}: i18n._(isCurrentUserStats ? msg`bids` : msg`total bids`)
+msgid "{totalBids, plural, =0 {{0}} one {{1}} other {{2}}}"
 msgstr ""
 
 #~ msgid "{totalBids, plural, =0 {bid} one {bid} other {bids}}"
 #~ msgstr ""
 
-#. placeholder {0}: isCurrentUserStats ? "bid" : "total bid"
-#. placeholder {1}: isCurrentUserStats ? "bids" : "total bids"
-msgid "{totalBids, plural, =0 {No bid yet} one {{0}} other {{1}}}"
-msgstr ""
+#~ msgid "{totalBids, plural, =0 {No bid yet} one {{0}} other {{1}}}"
+#~ msgstr ""
 
 msgid "{totalUsers, plural, =0 {No user yet} one {total user} other {total users}}"
 msgstr ""
@@ -59,6 +67,9 @@ msgid "Amount"
 msgstr ""
 
 msgid "Amout paid"
+msgstr ""
+
+msgid "An unexpected error occurred. You can try reloading this page."
 msgstr ""
 
 msgid "Art"
@@ -412,8 +423,14 @@ msgstr ""
 #~ msgid "No auction won"
 #~ msgstr ""
 
+msgid "No auction yet"
+msgstr ""
+
 #~ msgid "No bid"
 #~ msgstr ""
+
+msgid "No bid yet"
+msgstr ""
 
 msgid "No description provided."
 msgstr ""
@@ -514,6 +531,9 @@ msgstr ""
 #~ msgid "Profile"
 #~ msgstr ""
 
+msgid "Reload Page"
+msgstr ""
+
 #~ msgid "Retry the payment here"
 #~ msgstr ""
 
@@ -569,6 +589,9 @@ msgid "Since signup"
 msgstr ""
 
 msgid "Something went wrong, please try again later."
+msgstr ""
+
+msgid "Something went wrong!"
 msgstr ""
 
 msgid "Sort auctions"
@@ -661,7 +684,13 @@ msgstr ""
 msgid "Toggle theme"
 msgstr ""
 
+msgid "total auction"
+msgstr ""
+
 msgid "total auctions"
+msgstr ""
+
+msgid "total bid"
 msgstr ""
 
 msgid "total bids"
@@ -683,6 +712,12 @@ msgstr ""
 #~ msgstr ""
 
 msgid "Track Auctions. Effortlessly"
+msgstr ""
+
+msgid "Track Auctions. Effortlessly."
+msgstr ""
+
+msgid "Try Again"
 msgstr ""
 
 msgid "Update auction"

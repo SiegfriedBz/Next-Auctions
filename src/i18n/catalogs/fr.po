@@ -21,18 +21,20 @@ msgstr "/+Z5u4"
 msgid "{0}"
 msgstr "{0}"
 
-#. placeholder {0}: isCurrentUserStats ? "auction" : "total auction"
-#. placeholder {1}: isCurrentUserStats ? "auctions" : "total auctions"
-msgid "{totalAuctions, plural, =0 {No auction yet} one {{0}} other {{1}}}"
-msgstr "{totalAuctions, plural, =0 {Aucune enchère pour le moment} one {{0}} other {{1}}}"
+#. placeholder {0}: i18n._(msg`No auction yet`)
+#. placeholder {1}: i18n._( isCurrentUserStats ? msg`auction` : msg`total auction`, )
+#. placeholder {2}: i18n._( isCurrentUserStats ? msg`auctions` : msg`total auctions`, )
+msgid "{totalAuctions, plural, =0 {{0}} one {{1}} other {{2}}}"
+msgstr "{totalAuctions, plural, =0 {Aucune enchère} one {enchère} other {enchères}}"
 
-#. placeholder {0}: isCurrentUserStats ? "bid" : "total bid"
-#. placeholder {1}: isCurrentUserStats ? "bids" : "total bids"
-msgid "{totalBids, plural, =0 {No bid yet} one {{0}} other {{1}}}"
-msgstr "{totalBids, plural, =0 {Aucune offre pour le moment} one {{0}} other {{1}}}"
+#. placeholder {0}: i18n._(msg`No bid yet`)
+#. placeholder {1}: i18n._(isCurrentUserStats ? msg`bid` : msg`total bid`)
+#. placeholder {2}: i18n._(isCurrentUserStats ? msg`bids` : msg`total bids`)
+msgid "{totalBids, plural, =0 {{0}} one {{1}} other {{2}}}"
+msgstr "{totalBids, plural, =0 {Aucune offre} one {offre} other {offres}}"
 
 msgid "{totalUsers, plural, =0 {No user yet} one {total user} other {total users}}"
-msgstr "{totalUsers, plural, =0 {Aucun utilisateur pour le moment} one {utilisateur total} other {utilisateurs totaux}}"
+msgstr "{totalUsers, plural, =0 {Aucun utilisateur} one {utilisateur} other {utilisateurs}}"
 
 msgid "Already have an account ?"
 msgstr "Vous avez déjà un compte ?"
@@ -42,6 +44,9 @@ msgstr "Montant"
 
 msgid "Amout paid"
 msgstr "Montant payé"
+
+msgid "An unexpected error occurred. You can try reloading this page."
+msgstr "Une erreur inattendue est survenue. Vous pouvez essayer de recharger cette page."
 
 msgid "Art"
 msgstr "Art"
@@ -257,7 +262,7 @@ msgid "Highest Bid"
 msgstr "Offre la plus élevée"
 
 msgid "Home"
-msgstr "Accueil"
+msgstr "Home"
 
 msgid "Images"
 msgstr "Images"
@@ -321,6 +326,12 @@ msgstr "Mon profil"
 
 msgid "New"
 msgstr "Nouveau"
+
+msgid "No auction yet"
+msgstr "Aucune enchère"
+
+msgid "No bid yet"
+msgstr "Aucune offre"
 
 msgid "No description provided."
 msgstr "Aucune description fournie."
@@ -391,6 +402,9 @@ msgstr "Veuillez vous connecter pour créer des enchères."
 msgid "Product image"
 msgstr "Image du produit"
 
+msgid "Reload Page"
+msgstr "Recharger la page"
+
 msgid "Retry the payment here."
 msgstr "Réessayez le paiement ici."
 
@@ -429,6 +443,9 @@ msgstr "Depuis l’inscription"
 
 msgid "Something went wrong, please try again later."
 msgstr "Une erreur est survenue, veuillez réessayer plus tard."
+
+msgid "Something went wrong!"
+msgstr "Une erreur est survenue !"
 
 msgid "Sort auctions"
 msgstr "Trier les enchères"
@@ -505,11 +522,17 @@ msgstr "Titre *"
 msgid "Toggle theme"
 msgstr "Changer le thème"
 
+msgid "total auction"
+msgstr "enchère"
+
 msgid "total auctions"
-msgstr "enchères totales"
+msgstr "enchères"
+
+msgid "total bid"
+msgstr "offre"
 
 msgid "total bids"
-msgstr "offres totales"
+msgstr "offres"
 
 msgid "Total paid"
 msgstr "Total payé"
@@ -525,6 +548,12 @@ msgstr "Jouets"
 
 msgid "Track Auctions. Effortlessly"
 msgstr "Suivez vos enchères. Sans effort."
+
+msgid "Track Auctions. Effortlessly."
+msgstr "Suivez vos enchères. Sans effort."
+
+msgid "Try Again"
+msgstr "Réessayer"
 
 msgid "Update auction"
 msgstr "Mettre à jour l’enchère"
