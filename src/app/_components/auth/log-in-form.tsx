@@ -12,7 +12,6 @@ import { Button } from "@/components/ui/button";
 import {
   Form,
   FormControl,
-  FormDescription,
   FormField,
   FormItem,
   FormLabel,
@@ -83,9 +82,6 @@ export const LoginForm: FC<Props> = (props) => {
                   {...field}
                 />
               </FormControl>
-              <FormDescription>
-                <Trans>This is your public display email.</Trans>
-              </FormDescription>
               <FormMessage />
             </FormItem>
           )}
@@ -102,9 +98,6 @@ export const LoginForm: FC<Props> = (props) => {
               <FormControl>
                 <Input type="password" placeholder="******" {...field} />
               </FormControl>
-              <FormDescription>
-                <Trans>This is your private password.</Trans>
-              </FormDescription>
               <FormMessage />
             </FormItem>
           )}

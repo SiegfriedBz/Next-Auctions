@@ -22,7 +22,7 @@ export const AuctionStatusBadge: FC<Props> = (props) => {
   const { i18n } = useLingui();
 
   return (
-    <Badge className={cn(AuctionStatusClassNames[status], className)}>
+    <Badge className={cn(className, AuctionStatusClassNames[status])}>
       {i18n._(AuctionStatusToMessage[status] as MessageDescriptor)}
     </Badge>
   );

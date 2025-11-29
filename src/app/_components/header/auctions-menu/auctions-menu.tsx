@@ -34,11 +34,12 @@ export const AuctionsMenu: FC<Props> = (props) => {
       </NavigationMenuTrigger>
 
       <NavigationMenuContent>
-        <ul className="grid w-44 sm:w-72 gap-2 grid-cols-1 sm:grid-cols-2">
+        <ul className="flex w-58 gap-2 flex-wrap">
           <NavListItem
             title={t`Auctions`}
             icon={GavelIcon}
             href={`/${lang}/auctions`}
+            className="flex justify-center items-center w-full"
           />
 
           {me ? (
@@ -46,6 +47,7 @@ export const AuctionsMenu: FC<Props> = (props) => {
               title={t`Create auction`}
               icon={CirclePlusIcon}
               href={`/${lang}/auctions/new`}
+              className="flex justify-center items-center w-full"
             />
           ) : (
             <DisabledNavListItem
