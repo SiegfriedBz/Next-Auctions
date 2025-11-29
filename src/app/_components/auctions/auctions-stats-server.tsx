@@ -1,4 +1,5 @@
-import { Plural } from "@lingui/react/macro";
+import { msg } from "@lingui/core/macro";
+import { Plural, useLingui } from "@lingui/react/macro";
 import { CoinsIcon, GavelIcon, UsersIcon } from "lucide-react";
 import type { FC } from "react";
 import { Card, CardContent, CardTitle } from "@/components/ui/card";
@@ -16,6 +17,8 @@ type Props = {
 
 export const AuctionsStatsServer: FC<Props> = async (props) => {
   const { isCurrentUserStats = true, className } = props;
+
+  const { i18n } = useLingui();
 
   let me: User | null = null;
   let totalUsers: number = 0;
@@ -57,9 +60,13 @@ export const AuctionsStatsServer: FC<Props> = async (props) => {
             </CardTitle>
             <TypographyH5>
               <Plural
-                _0={"No auction yet"}
-                one={isCurrentUserStats ? "auction" : "total auction"}
-                other={isCurrentUserStats ? "auctions" : "total auctions"}
+                _0={i18n._(msg`No auction yet`)}
+                one={i18n._(
+                  isCurrentUserStats ? msg`auction` : msg`total auction`,
+                )}
+                other={i18n._(
+                  isCurrentUserStats ? msg`auctions` : msg`total auctions`,
+                )}
                 value={totalAuctions}
               />
             </TypographyH5>
@@ -74,9 +81,9 @@ export const AuctionsStatsServer: FC<Props> = async (props) => {
             <CardTitle className="text-2xl sm:text-3xl">{totalBids}</CardTitle>
             <TypographyH5>
               <Plural
-                _0="No bid yet"
-                one={isCurrentUserStats ? "bid" : "total bid"}
-                other={isCurrentUserStats ? "bids" : "total bids"}
+                _0={i18n._(msg`No bid yet`)}
+                one={i18n._(isCurrentUserStats ? msg`bid` : msg`total bid`)}
+                other={i18n._(isCurrentUserStats ? msg`bids` : msg`total bids`)}
                 value={totalBids}
               />
             </TypographyH5>
