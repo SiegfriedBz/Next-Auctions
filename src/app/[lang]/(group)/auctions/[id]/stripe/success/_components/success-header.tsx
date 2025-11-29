@@ -34,7 +34,7 @@ export const SuccessHeaderCard: FC<Props> = async (props) => {
       <div className="flex items-center gap-2">
         <CoinsIcon className="size-4 text-amber-500" />
         <TypographyH4 className="whitespace-nowrap">
-          <Trans>Amout paid</Trans>:
+          <Trans>Amount paid</Trans>:
         </TypographyH4>
         <TypographyH5>
           <FormatCurrency value={auction.highestBid ?? null} />

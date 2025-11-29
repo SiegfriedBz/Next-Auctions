@@ -11,7 +11,7 @@ msgstr ""
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
-"Plural-Forms: \n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #. js-lingui-explicit-id
 msgid "/+Z5u4"
@@ -25,28 +25,28 @@ msgstr "{0}"
 #. placeholder {1}: i18n._( isCurrentUserStats ? msg`auction` : msg`total auction`, )
 #. placeholder {2}: i18n._( isCurrentUserStats ? msg`auctions` : msg`total auctions`, )
 msgid "{totalAuctions, plural, =0 {{0}} one {{1}} other {{2}}}"
-msgstr "{totalAuctions, plural, =0 {Noch keine Auktion} one {Auktion} other {Auktionen}}"
+msgstr "{totalAuctions, plural, =0 {Noch keine Auktionen} one {Auktion} other {Auktionen}}"
 
 #. placeholder {0}: i18n._(msg`No bid yet`)
 #. placeholder {1}: i18n._(isCurrentUserStats ? msg`bid` : msg`total bid`)
 #. placeholder {2}: i18n._(isCurrentUserStats ? msg`bids` : msg`total bids`)
 msgid "{totalBids, plural, =0 {{0}} one {{1}} other {{2}}}"
-msgstr "{totalBids, plural, =0 {Noch kein Gebot} one {Gebot} other {Gebote}}"
+msgstr "{totalBids, plural, =0 {Noch keine Gebote} one {Gebot} other {Gebote}}"
 
 msgid "{totalUsers, plural, =0 {No user yet} one {total user} other {total users}}"
-msgstr "{totalUsers, plural, =0 {Noch kein Benutzer} one {Gesamtnutzer} other {Gesamtnutzer}}"
+msgstr "{totalUsers, plural, =0 {Noch keine Nutzer} one {Nutzer} other {Nutzer}}"
 
 msgid "Already have an account ?"
-msgstr "Haben Sie bereits ein Konto?"
+msgstr "Bereits ein Konto?"
 
 msgid "Amount"
 msgstr "Betrag"
 
-msgid "Amout paid"
+msgid "Amount paid"
 msgstr "Bezahlter Betrag"
 
 msgid "An unexpected error occurred. You can try reloading this page."
-msgstr "Ein unerwarteter Fehler ist aufgetreten. Versuchen Sie, die Seite neu zu laden."
+msgstr "Ein unerwarteter Fehler ist aufgetreten. Versuche, die Seite neu zu laden."
 
 msgid "Art"
 msgstr "Kunst"
@@ -64,7 +64,7 @@ msgid "Auctions"
 msgstr "Auktionen"
 
 msgid "Automotive"
-msgstr "Automobil"
+msgstr "Fahrzeuge"
 
 msgid "Avatar uploaded successfully!"
 msgstr "Avatar erfolgreich hochgeladen!"
@@ -82,7 +82,7 @@ msgid "Bid on auction"
 msgstr "Auf Auktion bieten"
 
 msgid "Bid placed successfully!"
-msgstr "Gebot erfolgreich abgegeben!"
+msgstr "Gebot erfolgreich platziert!"
 
 msgid "bids"
 msgstr "Gebote"
@@ -91,13 +91,13 @@ msgid "Bids"
 msgstr "Gebote"
 
 msgid "Browse Auctions"
-msgstr "Auktionen durchsuchen"
+msgstr "Auktionen durchstöbern"
 
 msgid "browse files"
 msgstr "Dateien durchsuchen"
 
 msgid "Built to exacting standards using only the best quality hardware, pickups and tone woods..."
-msgstr "Nach höchsten Standards gebaut, nur mit erstklassiger Hardware, Pickups und Tonhölzern..."
+msgstr "Nach höchsten Standards gefertigt – nur mit hochwertiger Hardware, Tonabnehmern und Tonhölzern..."
 
 msgid "Cancel"
 msgstr "Abbrechen"
@@ -109,16 +109,16 @@ msgid "Category *"
 msgstr "Kategorie *"
 
 msgid "Choose a language"
-msgstr "Sprache auswählen"
+msgstr "Sprache wählen"
 
 msgid "Click on Create Auction"
-msgstr "Klicken Sie auf „Auktion erstellen“"
+msgstr "Klicke auf 'Auktion erstellen'"
 
 msgid "Click on Update Auction"
-msgstr "Klicken Sie auf „Auktion aktualisieren“"
+msgstr "Klicke auf 'Auktion aktualisieren'"
 
 msgid "Click on Update your profile"
-msgstr "Klicken Sie auf „Profil aktualisieren“"
+msgstr "Klicke auf 'Profil aktualisieren'"
 
 msgid "Closed"
 msgstr "Beendet"
@@ -127,7 +127,7 @@ msgid "Collectibles"
 msgstr "Sammlerstücke"
 
 msgid "Contact owner"
-msgstr "Besitzer kontaktieren"
+msgstr "Verkäufer kontaktieren"
 
 msgid "Continue"
 msgstr "Weiter"
@@ -142,10 +142,10 @@ msgid "Create bid"
 msgstr "Gebot abgeben"
 
 msgid "Create your account."
-msgstr "Erstellen Sie Ihr Konto."
+msgstr "Erstelle dein Konto."
 
 msgid "Create your auction"
-msgstr "Ihre Auktion erstellen"
+msgstr "Erstelle deine Auktion"
 
 msgid "Created at"
 msgstr "Erstellt am"
@@ -178,7 +178,7 @@ msgid "Discover, Bid & Win Unique Auctions"
 msgstr "Entdecken, bieten & einzigartige Auktionen gewinnen"
 
 msgid "Don't have an account ? "
-msgstr "Sie haben noch kein Konto? "
+msgstr "Noch kein Konto?"
 
 msgid "Draft"
 msgstr "Entwurf"
@@ -190,7 +190,7 @@ msgid "Edit"
 msgstr "Bearbeiten"
 
 msgid "Edit my profile"
-msgstr "Mein Profil bearbeiten"
+msgstr "Profil bearbeiten"
 
 msgid "Electronics"
 msgstr "Elektronik"
@@ -213,29 +213,29 @@ msgstr "Endet in"
 msgid "English"
 msgstr "Englisch"
 
-msgid "Enter your email and password to access."
-msgstr "Geben Sie Ihre E-Mail und Ihr Passwort ein, um Zugriff zu erhalten."
+msgid "Enter your email and password to login."
+msgstr "Gib deine E-Mail und dein Passwort ein, um dich anzumelden."
 
 msgid "Failed to upload avatar. Please try again."
-msgstr "Fehler beim Hochladen des Avatars. Bitte versuchen Sie es erneut."
+msgstr "Avatar konnte nicht hochgeladen werden. Versuche es erneut."
 
 msgid "Failed to upload one or more images. Please try again."
-msgstr "Ein oder mehrere Bilder konnten nicht hochgeladen werden. Bitte versuchen Sie es erneut."
+msgstr "Ein oder mehrere Bilder konnten nicht hochgeladen werden. Versuche es erneut."
 
 msgid "Fashion"
 msgstr "Mode"
 
 msgid "Fill in your details to create a new account."
-msgstr "Füllen Sie Ihre Daten aus, um ein neues Konto zu erstellen."
+msgstr "Fülle deine Daten aus, um ein neues Konto zu erstellen."
 
 msgid "Fill the form below to create a new auction"
-msgstr "Füllen Sie das Formular unten aus, um eine neue Auktion zu erstellen"
+msgstr "Fülle das Formular aus, um eine neue Auktion zu erstellen"
 
 msgid "Fill the form below to update your auction"
-msgstr "Füllen Sie das Formular unten aus, um Ihre Auktion zu aktualisieren"
+msgstr "Fülle das Formular aus, um deine Auktion zu aktualisieren"
 
 msgid "Fill the form below to update your profile"
-msgstr "Füllen Sie das Formular unten aus, um Ihr Profil zu aktualisieren"
+msgstr "Fülle das Formular aus, um dein Profil zu aktualisieren"
 
 msgid "Filter auctions"
 msgstr "Auktionen filtern"
@@ -250,13 +250,13 @@ msgid "Français"
 msgstr "Französisch"
 
 msgid "Give a description to your auction"
-msgstr "Geben Sie Ihrer Auktion eine Beschreibung"
+msgstr "Beschreibung für deine Auktion"
 
 msgid "Give a Starting Price to your auction"
-msgstr "Geben Sie Ihrer Auktion einen Startpreis"
+msgstr "Startpreis für deine Auktion"
 
 msgid "Give a title to your auction"
-msgstr "Geben Sie Ihrer Auktion einen Titel"
+msgstr "Titel für deine Auktion"
 
 msgid "Highest Bid"
 msgstr "Höchstes Gebot"
@@ -271,13 +271,13 @@ msgid "Images uploaded successfully!"
 msgstr "Bilder erfolgreich hochgeladen!"
 
 msgid "Join our community-driven platform to find exclusive deals and one-of-a-kind items."
-msgstr "Schließen Sie sich unserer Community-basierten Plattform an, um exklusive Angebote und einzigartige Artikel zu finden."
+msgstr "Werde Teil unserer Community-Plattform und finde exklusive Angebote und einzigartige Artikel."
 
 msgid "Language"
 msgstr "Sprache"
 
 msgid "Last month"
-msgstr "Letzten Monat"
+msgstr "Letzter Monat"
 
 msgid "Last name"
 msgstr "Nachname"
@@ -295,7 +295,7 @@ msgid "Light"
 msgstr "Hell"
 
 msgid "Log in to access more features."
-msgstr "Melden Sie sich an, um mehr Funktionen zu nutzen."
+msgstr "Melde dich an, um mehr Funktionen zu nutzen."
 
 msgid "Log out"
 msgstr "Abmelden"
@@ -328,10 +328,10 @@ msgid "New"
 msgstr "Neu"
 
 msgid "No auction yet"
-msgstr "Noch keine Auktion"
+msgstr "Noch keine Auktionen"
 
 msgid "No bid yet"
-msgstr "Noch kein Gebot"
+msgstr "Noch keine Gebote"
 
 msgid "No description provided."
 msgstr "Keine Beschreibung angegeben."
@@ -349,7 +349,7 @@ msgid "No results."
 msgstr "Keine Ergebnisse."
 
 msgid "Notification card with link"
-msgstr "Benachrichtigungskarte mit Link"
+msgstr "Benachrichtigung mit Link"
 
 msgid "Notification marked as seen"
 msgstr "Benachrichtigung als gesehen markiert"
@@ -382,22 +382,22 @@ msgid "Payments received"
 msgstr "Erhaltene Zahlungen"
 
 msgid "Payments you have made over time"
-msgstr "Zahlungen, die Sie im Laufe der Zeit getätigt haben"
+msgstr "Deine getätigten Zahlungen im Laufe der Zeit"
 
 msgid "Payments you have received over time"
-msgstr "Zahlungen, die Sie im Laufe der Zeit erhalten haben"
+msgstr "Deine erhaltenen Zahlungen im Laufe der Zeit"
 
 msgid "Payments you made"
-msgstr "Ihre getätigten Zahlungen"
+msgstr "Deine getätigten Zahlungen"
 
 msgid "Payments you received"
-msgstr "Ihre erhaltenen Zahlungen"
+msgstr "Deine erhaltenen Zahlungen"
 
 msgid "Place your bid"
-msgstr "Geben Sie Ihr Gebot ab"
+msgstr "Gebot abgeben"
 
 msgid "Please log in to create auctions."
-msgstr "Bitte melden Sie sich an, um Auktionen zu erstellen."
+msgstr "Melde dich an, um Auktionen zu erstellen."
 
 msgid "Product image"
 msgstr "Produktbild"
@@ -412,7 +412,7 @@ msgid "Select a category"
 msgstr "Kategorie auswählen"
 
 msgid "Select a category for your auction"
-msgstr "Wählen Sie eine Kategorie für Ihre Auktion"
+msgstr "Wähle eine Kategorie für deine Auktion"
 
 msgid "Select a range"
 msgstr "Zeitraum auswählen"
@@ -421,7 +421,7 @@ msgid "Select a status"
 msgstr "Status auswählen"
 
 msgid "Select a status for your auction"
-msgstr "Wählen Sie einen Status für Ihre Auktion"
+msgstr "Wähle einen Status für deine Auktion"
 
 msgid "Select date"
 msgstr "Datum auswählen"
@@ -430,7 +430,7 @@ msgid "Sending bid..."
 msgstr "Gebot wird gesendet..."
 
 msgid "Set a date to end your auction"
-msgstr "Legen Sie ein Enddatum für Ihre Auktion fest"
+msgstr "Enddatum für deine Auktion festlegen"
 
 msgid "Sign up"
 msgstr "Registrieren"
@@ -439,13 +439,13 @@ msgid "Signing up..."
 msgstr "Registrierung läuft..."
 
 msgid "Since signup"
-msgstr "Seit Registrierung"
+msgstr "Seit der Registrierung"
 
 msgid "Something went wrong, please try again later."
-msgstr "Etwas ist schiefgelaufen. Bitte versuchen Sie es später erneut."
+msgstr "Etwas ist schiefgegangen. Versuche es später nochmal."
 
 msgid "Something went wrong!"
-msgstr "Etwas ist schiefgelaufen!"
+msgstr "Etwas ist schiefgegangen!"
 
 msgid "Sort auctions"
 msgstr "Auktionen sortieren"
@@ -472,7 +472,7 @@ msgid "Status"
 msgstr "Status"
 
 msgid "Switch login/signup forms"
-msgstr "Anmelde-/Registrierungsformulare wechseln"
+msgstr "Wechsle zwischen Anmeldung und Registrierung"
 
 msgid "System"
 msgstr "System"
@@ -481,37 +481,25 @@ msgid "This auction has been won and paid for."
 msgstr "Diese Auktion wurde gewonnen und bezahlt."
 
 msgid "This auction has ended with no bids."
-msgstr "Diese Auktion ist ohne Gebote beendet worden."
+msgstr "Diese Auktion endete ohne Gebote."
 
 msgid "This auction has ended. Winner is pending payment."
-msgstr "Diese Auktion ist beendet. Der Gewinner wartet auf die Zahlung."
+msgstr "Diese Auktion ist beendet. Der Gewinner muss noch zahlen."
 
 msgid "This auction is ongoing."
-msgstr "Diese Auktion läuft derzeit."
+msgstr "Diese Auktion läuft noch."
 
 msgid "This is your auction"
-msgstr "Das ist Ihre Auktion"
+msgstr "Das ist deine Auktion"
 
 msgid "This is your bid's amount."
-msgstr "Dies ist der Betrag Ihres Gebots."
-
-msgid "This is your private password."
-msgstr "Dies ist Ihr privates Passwort."
-
-msgid "This is your public display email."
-msgstr "Dies ist Ihre öffentlich angezeigte E-Mail."
-
-msgid "This is your public display first name."
-msgstr "Dies ist Ihr öffentlich angezeigter Vorname."
-
-msgid "This is your public display last name."
-msgstr "Dies ist Ihr öffentlich angezeigter Nachname."
+msgstr "Das ist der Betrag deines Gebots."
 
 msgid "This is your public first name."
-msgstr "Dies ist Ihr öffentlicher Vorname."
+msgstr "Das ist dein öffentlicher Vorname."
 
 msgid "This is your public last name."
-msgstr "Dies ist Ihr öffentlicher Nachname."
+msgstr "Das ist dein öffentlicher Nachname."
 
 msgid "Title"
 msgstr "Titel"
@@ -520,7 +508,7 @@ msgid "Title *"
 msgstr "Titel *"
 
 msgid "Toggle theme"
-msgstr "Theme wechseln"
+msgstr "Design wechseln"
 
 msgid "total auction"
 msgstr "Gesamtauktion"
@@ -547,10 +535,10 @@ msgid "Toys"
 msgstr "Spielzeug"
 
 msgid "Track Auctions. Effortlessly"
-msgstr "Auktionen verfolgen. Mühelos"
+msgstr "Auktionen verfolgen. Einfach."
 
 msgid "Track Auctions. Effortlessly."
-msgstr "Auktionen verfolgen. Mühelos."
+msgstr "Auktionen verfolgen. Einfach."
 
 msgid "Try Again"
 msgstr "Erneut versuchen"
@@ -559,10 +547,10 @@ msgid "Update auction"
 msgstr "Auktion aktualisieren"
 
 msgid "Update your auction"
-msgstr "Ihre Auktion aktualisieren"
+msgstr "Auktion aktualisieren"
 
 msgid "Update your profile"
-msgstr "Ihr Profil aktualisieren"
+msgstr "Profil aktualisieren"
 
 msgid "Updating auction..."
 msgstr "Auktion wird aktualisiert..."
@@ -586,10 +574,10 @@ msgid "Uploading image..."
 msgstr "Bild wird hochgeladen..."
 
 msgid "user"
-msgstr "Benutzer"
+msgstr "Nutzer"
 
 msgid "User profile card"
-msgstr "Benutzerprofilkarte"
+msgstr "Nutzerprofilkarte"
 
 msgid "View auction"
 msgstr "Auktion ansehen"
@@ -601,43 +589,43 @@ msgid "Won auctions"
 msgstr "Gewonnene Auktionen"
 
 msgid "You did not pay this auction yet. Contact us for more information."
-msgstr "Sie haben diese Auktion noch nicht bezahlt. Kontaktieren Sie uns für weitere Informationen."
+msgstr "Du hast diese Auktion noch nicht bezahlt. Kontaktiere uns für weitere Informationen."
 
 msgid "You logged out successfully"
-msgstr "Sie haben sich erfolgreich abgemeldet"
+msgstr "Erfolgreich abgemeldet"
 
 msgid "You successfully created your auction!"
-msgstr "Sie haben Ihre Auktion erfolgreich erstellt!"
+msgstr "Deine Auktion wurde erfolgreich erstellt!"
 
 msgid "You successfully paid this auction."
-msgstr "Sie haben diese Auktion erfolgreich bezahlt."
+msgstr "Du hast diese Auktion erfolgreich bezahlt."
 
 msgid "You successfully signed in!"
-msgstr "Sie haben sich erfolgreich angemeldet!"
+msgstr "Erfolgreich angemeldet!"
 
 msgid "You successfully signed up!"
-msgstr "Sie haben sich erfolgreich registriert!"
+msgstr "Erfolgreich registriert!"
 
 msgid "You successfully updated your auction!"
-msgstr "Sie haben Ihre Auktion erfolgreich aktualisiert!"
+msgstr "Deine Auktion wurde erfolgreich aktualisiert!"
 
 msgid "You successfully updated your profile!"
-msgstr "Sie haben Ihr Profil erfolgreich aktualisiert!"
+msgstr "Dein Profil wurde erfolgreich aktualisiert!"
 
 msgid "You won and paid for this auction."
-msgstr "Sie haben diese Auktion gewonnen und bezahlt."
+msgstr "Du hast diese Auktion gewonnen und bezahlt."
 
 msgid "You won! Proceed to payment."
-msgstr "Sie haben gewonnen! Fahren Sie mit der Zahlung fort."
+msgstr "Gewonnen! Zur Zahlung weiter."
 
 msgid "You're currently the highest bidder!"
-msgstr "Sie sind derzeit der Höchstbietende!"
+msgstr "Du bist aktuell der Höchstbietende!"
 
 msgid "Your image will be uploaded now, but it won't update your profile until you click “Update your profile”."
-msgstr "Ihr Bild wird jetzt hochgeladen, aber Ihr Profil wird erst aktualisiert, wenn Sie auf „Profil aktualisieren“ klicken."
+msgstr "Dein Bild wird jetzt hochgeladen, aber dein Profil wird erst aktualisiert, wenn du auf 'Profil aktualisieren' klickst."
 
 msgid "Your images will be uploaded now, but it won't be saved until you create your auction."
-msgstr "Ihre Bilder werden jetzt hochgeladen, aber erst gespeichert, wenn Sie Ihre Auktion erstellen."
+msgstr "Deine Bilder werden jetzt hochgeladen, aber sie werden erst gespeichert, wenn du deine Auktion erstellst."
 
 msgid "Your transaction was not completed."
-msgstr "Ihre Transaktion wurde nicht abgeschlossen."
+msgstr "Deine Transaktion wurde nicht abgeschlossen."

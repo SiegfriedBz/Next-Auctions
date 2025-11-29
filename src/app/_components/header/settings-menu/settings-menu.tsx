@@ -26,19 +26,25 @@ export const SettingsMenu: FC = () => {
       </NavigationMenuTrigger>
 
       <NavigationMenuContent>
-        <ul className="grid w-44 sm:w-72 gap-2 grid-cols-1 sm:grid-cols-2">
-          <li key="I18nSwitcher" className="flex justify-center items-center">
+        <ul className="flex w-58 gap-2 flex-wrap">
+          <li
+            key="I18nSwitcher"
+            className="flex justify-center items-center w-full"
+          >
             <NavigationMenuLink asChild>
               <I18nSwitcher
                 className={`
                   pointer-events-auto h-10 sm:h-12 text-sm leading-none font-medium 
                   flex flex-row justify-start items-center gap-x-2
-                  px-2 py-6 rounded-md
+                  px-2 py-6 rounded- w-full
                 `}
               />
             </NavigationMenuLink>
           </li>
-          <li key="ThemeToggleButton">
+          <li
+            key="ThemeToggleButton"
+            className="flex justify-center items-center w-full"
+          >
             <NavigationMenuLink asChild>
               <ThemeToggleButton
                 className="pointer-events-auto h-10 sm:h-12 text-sm leading-none font-medium

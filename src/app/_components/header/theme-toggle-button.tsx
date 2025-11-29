@@ -25,7 +25,7 @@ export const ThemeToggleButton: FC<Props> = (props) => {
       <DropdownMenuTrigger asChild className={className}>
         <Button
           variant="ghost"
-          className="group cursor-pointer w-full rounded-md px-2 gap-x-2 flex justify-start items-center dark:hover:bg-input/50 "
+          className="group cursor-pointer min-w-full rounded-md px-2 gap-x-2 flex justify-start items-center dark:hover:bg-input/50 "
         >
           <span className="inline-flex relative w-4 h-8 opacity-50 group-hover:opacity-100 group-hover:font-extrabold transition-all duration-200">
             <Sun className="absolute top-1/2 -translate-y-1/2 h-[1.2rem] w-[1.2rem] scale-100 transition-all dark:scale-0" />

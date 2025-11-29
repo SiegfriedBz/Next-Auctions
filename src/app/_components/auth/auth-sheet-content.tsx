@@ -41,7 +41,7 @@ export const AuthSheetContent: FC<Props> = (props) => {
 
         <SheetDescription>
           {isLogin ? (
-            <Trans>Enter your email and password to access.</Trans>
+            <Trans>Enter your email and password to login.</Trans>
           ) : (
             <Trans>Fill in your details to create a new account.</Trans>
           )}

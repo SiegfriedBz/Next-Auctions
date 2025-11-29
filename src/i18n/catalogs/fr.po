@@ -15,7 +15,7 @@ msgstr ""
 
 #. js-lingui-explicit-id
 msgid "/+Z5u4"
-msgstr "/+Z5u4"
+msgstr ""
 
 #. placeholder {0}: auctionName ?? id
 msgid "{0}"
@@ -34,7 +34,7 @@ msgid "{totalBids, plural, =0 {{0}} one {{1}} other {{2}}}"
 msgstr "{totalBids, plural, =0 {Aucune offre} one {offre} other {offres}}"
 
 msgid "{totalUsers, plural, =0 {No user yet} one {total user} other {total users}}"
-msgstr "{totalUsers, plural, =0 {Aucun utilisateur} one {utilisateur} other {utilisateurs}}"
+msgstr "{totalUsers, plural, =0 {Aucun membre} one {membre} other {membres}}"
 
 msgid "Already have an account ?"
 msgstr "Vous avez déjà un compte ?"
@@ -42,7 +42,7 @@ msgstr "Vous avez déjà un compte ?"
 msgid "Amount"
 msgstr "Montant"
 
-msgid "Amout paid"
+msgid "Amount paid"
 msgstr "Montant payé"
 
 msgid "An unexpected error occurred. You can try reloading this page."
@@ -213,8 +213,8 @@ msgstr "Se termine dans"
 msgid "English"
 msgstr "English"
 
-msgid "Enter your email and password to access."
-msgstr "Entrez votre email et votre mot de passe pour accéder."
+msgid "Enter your email and password to login."
+msgstr "Entrez votre email et votre mot de passe pour vous connecter."
 
 msgid "Failed to upload avatar. Please try again."
 msgstr "Échec du téléversement de l’avatar. Veuillez réessayer."
@@ -495,18 +495,6 @@ msgstr "Ceci est votre enchère"
 msgid "This is your bid's amount."
 msgstr "Ceci est le montant de votre offre."
 
-msgid "This is your private password."
-msgstr "Ceci est votre mot de passe privé."
-
-msgid "This is your public display email."
-msgstr "Ceci est votre email public."
-
-msgid "This is your public display first name."
-msgstr "Ceci est votre prénom public."
-
-msgid "This is your public display last name."
-msgstr "Ceci est votre nom public."
-
 msgid "This is your public first name."
 msgstr "Ceci est votre prénom public."
 
@@ -541,7 +529,7 @@ msgid "Total received"
 msgstr "Total reçu"
 
 msgid "total users"
-msgstr "utilisateurs totaux"
+msgstr "membres totaux"
 
 msgid "Toys"
 msgstr "Jouets"
@@ -586,16 +574,16 @@ msgid "Uploading image..."
 msgstr "Téléversement de l’image…"
 
 msgid "user"
-msgstr "utilisateur"
+msgstr "membre"
 
 msgid "User profile card"
-msgstr "Carte de profil utilisateur"
+msgstr "Carte de profil membre"
 
 msgid "View auction"
 msgstr "Voir l’enchère"
 
 msgid "Welcome back!"
-msgstr "Bon retour !"
+msgstr "Ravi de vous revoir !"
 
 msgid "Won auctions"
 msgstr "Enchères gagnées"

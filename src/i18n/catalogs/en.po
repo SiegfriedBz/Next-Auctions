@@ -15,7 +15,7 @@ msgstr ""
 
 #. js-lingui-explicit-id
 msgid "/+Z5u4"
-msgstr "/+Z5u4"
+msgstr ""
 
 #. placeholder {0}: auctionName ?? id
 msgid "{0}"
@@ -27,47 +27,23 @@ msgstr "{0}"
 msgid "{totalAuctions, plural, =0 {{0}} one {{1}} other {{2}}}"
 msgstr "{totalAuctions, plural, =0 {{0}} one {{1}} other {{2}}}"
 
-#~ msgid "{totalAuctions, plural, =0 {auction} one {auction} other {auctions}}"
-#~ msgstr "{totalAuctions, plural, =0 {auction} one {auction} other {auctions}}"
-
-#~ msgid "{totalAuctions, plural, =0 {No auction yet} one {{0}} other {{1}}}"
-#~ msgstr "{totalAuctions, plural, =0 {No auction yet} one {{0}} other {{1}}}"
-
 #. placeholder {0}: i18n._(msg`No bid yet`)
 #. placeholder {1}: i18n._(isCurrentUserStats ? msg`bid` : msg`total bid`)
 #. placeholder {2}: i18n._(isCurrentUserStats ? msg`bids` : msg`total bids`)
 msgid "{totalBids, plural, =0 {{0}} one {{1}} other {{2}}}"
 msgstr "{totalBids, plural, =0 {{0}} one {{1}} other {{2}}}"
 
-#~ msgid "{totalBids, plural, =0 {bid} one {bid} other {bids}}"
-#~ msgstr "{totalBids, plural, =0 {bid} one {bid} other {bids}}"
-
-#~ msgid "{totalBids, plural, =0 {No bid yet} one {{0}} other {{1}}}"
-#~ msgstr "{totalBids, plural, =0 {No bid yet} one {{0}} other {{1}}}"
-
 msgid "{totalUsers, plural, =0 {No user yet} one {total user} other {total users}}"
 msgstr "{totalUsers, plural, =0 {No user yet} one {total user} other {total users}}"
-
-#~ msgid "{totalUsers, plural, =0 {user} one {user} other {users}}"
-#~ msgstr "{totalUsers, plural, =0 {user} one {user} other {users}}"
-
-#~ msgid "A set of layered sections of content—known as tab panels—that are displayed one at a time."
-#~ msgstr "A set of layered sections of content—known as tab panels—that are displayed one at a time."
-
-#~ msgid "Actions"
-#~ msgstr "Actions"
 
 msgid "Already have an account ?"
 msgstr "Already have an account ?"
 
-#~ msgid "Already have an account?"
-#~ msgstr "Already have an account?"
-
 msgid "Amount"
 msgstr "Amount"
 
-msgid "Amout paid"
-msgstr "Amout paid"
+msgid "Amount paid"
+msgstr "Amount paid"
 
 msgid "An unexpected error occurred. You can try reloading this page."
 msgstr "An unexpected error occurred. You can try reloading this page."
@@ -86,9 +62,6 @@ msgstr "auctions"
 
 msgid "Auctions"
 msgstr "Auctions"
-
-#~ msgid "Auctions won"
-#~ msgstr "Auctions won"
 
 msgid "Automotive"
 msgstr "Automotive"
@@ -129,12 +102,6 @@ msgstr "Built to exacting standards using only the best quality hardware, pickup
 msgid "Cancel"
 msgstr "Cancel"
 
-#~ msgid "Cancelled"
-#~ msgstr "Cancelled"
-
-#~ msgid "category"
-#~ msgstr "category"
-
 msgid "Category"
 msgstr "Category"
 
@@ -165,15 +132,6 @@ msgstr "Contact owner"
 msgid "Continue"
 msgstr "Continue"
 
-#~ msgid "Create"
-#~ msgstr "Create"
-
-#~ msgid "Create account"
-#~ msgstr "Create account"
-
-#~ msgid "Create Account"
-#~ msgstr "Create Account"
-
 msgid "Create auction"
 msgstr "Create auction"
 
@@ -192,17 +150,11 @@ msgstr "Create your auction"
 msgid "Created at"
 msgstr "Created at"
 
-#~ msgid "Creating account..."
-#~ msgstr "Creating account..."
-
 msgid "Creating auction..."
 msgstr "Creating auction..."
 
 msgid "Creating bid..."
 msgstr "Creating bid..."
-
-#~ msgid "Current Bid"
-#~ msgstr "Current Bid"
 
 msgid "Dark"
 msgstr "Dark"
@@ -228,9 +180,6 @@ msgstr "Discover, Bid & Win Unique Auctions"
 msgid "Don't have an account ? "
 msgstr "Don't have an account ? "
 
-#~ msgid "Don't have an account? "
-#~ msgstr "Don't have an account? "
-
 msgid "Draft"
 msgstr "Draft"
 
@@ -252,9 +201,6 @@ msgstr "Email"
 msgid "End at"
 msgstr "End at"
 
-#~ msgid "End Date"
-#~ msgstr "End Date"
-
 msgid "Ended"
 msgstr "Ended"
 
@@ -267,14 +213,11 @@ msgstr "Ends in"
 msgid "English"
 msgstr "English"
 
-msgid "Enter your email and password to access."
-msgstr "Enter your email and password to access."
+msgid "Enter your email and password to login."
+msgstr "Enter your email and password to login."
 
 msgid "Failed to upload avatar. Please try again."
 msgstr "Failed to upload avatar. Please try again."
-
-#~ msgid "Failed to upload image. Please try again."
-#~ msgstr "Failed to upload image. Please try again."
 
 msgid "Failed to upload one or more images. Please try again."
 msgstr "Failed to upload one or more images. Please try again."
@@ -291,17 +234,11 @@ msgstr "Fill the form below to create a new auction"
 msgid "Fill the form below to update your auction"
 msgstr "Fill the form below to update your auction"
 
-#~ msgid "Fill the form below to update your draft auction"
-#~ msgstr "Fill the form below to update your draft auction"
-
 msgid "Fill the form below to update your profile"
 msgstr "Fill the form below to update your profile"
 
 msgid "Filter auctions"
 msgstr "Filter auctions"
-
-#~ msgid "Filtres"
-#~ msgstr "Filtres"
 
 msgid "First name"
 msgstr "First name"
@@ -312,17 +249,11 @@ msgstr "First name *"
 msgid "Français"
 msgstr "Français"
 
-#~ msgid "Give a category to your auction"
-#~ msgstr "Give a category to your auction"
-
 msgid "Give a description to your auction"
 msgstr "Give a description to your auction"
 
 msgid "Give a Starting Price to your auction"
 msgstr "Give a Starting Price to your auction"
-
-#~ msgid "Give a startingPrice to your auction"
-#~ msgstr "Give a startingPrice to your auction"
 
 msgid "Give a title to your auction"
 msgstr "Give a title to your auction"
@@ -332,9 +263,6 @@ msgstr "Highest Bid"
 
 msgid "Home"
 msgstr "Home"
-
-#~ msgid "Image uploaded successfully!"
-#~ msgstr "Image uploaded successfully!"
 
 msgid "Images"
 msgstr "Images"
@@ -354,9 +282,6 @@ msgstr "Last month"
 msgid "Last name"
 msgstr "Last name"
 
-#~ msgid "Last name *"
-#~ msgstr "Last name *"
-
 msgid "Last Name *"
 msgstr "Last Name *"
 
@@ -368,12 +293,6 @@ msgstr "Last year"
 
 msgid "Light"
 msgstr "Light"
-
-#~ msgid "Liste"
-#~ msgstr "Liste"
-
-#~ msgid "Loading uploader..."
-#~ msgstr "Loading uploader..."
 
 msgid "Log in to access more features."
 msgstr "Log in to access more features."
@@ -387,14 +306,8 @@ msgstr "Logging in..."
 msgid "Login"
 msgstr "Login"
 
-#~ msgid "Me"
-#~ msgstr "Me"
-
 msgid "Music"
 msgstr "Music"
-
-#~ msgid "My Account"
-#~ msgstr "My Account"
 
 msgid "My auctions"
 msgstr "My auctions"
@@ -411,32 +324,17 @@ msgstr "My profile"
 msgid "My Profile"
 msgstr "My Profile"
 
-#~ msgid "My Settings"
-#~ msgstr "My Settings"
-
 msgid "New"
 msgstr "New"
 
-#~ msgid "Next"
-#~ msgstr "Next"
-
-#~ msgid "No auction won"
-#~ msgstr "No auction won"
-
 msgid "No auction yet"
 msgstr "No auction yet"
-
-#~ msgid "No bid"
-#~ msgstr "No bid"
 
 msgid "No bid yet"
 msgstr "No bid yet"
 
 msgid "No description provided."
 msgstr "No description provided."
-
-#~ msgid "No new auction won"
-#~ msgstr "No new auction won"
 
 msgid "No new bid"
 msgstr "No new bid"
@@ -446,12 +344,6 @@ msgstr "No new payment"
 
 msgid "No new won auction"
 msgstr "No new won auction"
-
-#~ msgid "No notification"
-#~ msgstr "No notification"
-
-#~ msgid "No payment"
-#~ msgstr "No payment"
 
 msgid "No results."
 msgstr "No results."
@@ -483,20 +375,11 @@ msgstr "Payment Cancelled."
 msgid "Payments"
 msgstr "Payments"
 
-#~ msgid "Payments done"
-#~ msgstr "Payments done"
-
-#~ msgid "Payments done aggregated by period"
-#~ msgstr "Payments done aggregated by period"
-
 msgid "Payments made"
 msgstr "Payments made"
 
 msgid "Payments received"
 msgstr "Payments received"
-
-#~ msgid "Payments received aggregated by period"
-#~ msgstr "Payments received aggregated by period"
 
 msgid "Payments you have made over time"
 msgstr "Payments you have made over time"
@@ -507,14 +390,8 @@ msgstr "Payments you have received over time"
 msgid "Payments you made"
 msgstr "Payments you made"
 
-#~ msgid "Payments you made aggregated by period"
-#~ msgstr "Payments you made aggregated by period"
-
 msgid "Payments you received"
 msgstr "Payments you received"
-
-#~ msgid "Payments you received aggregated by period"
-#~ msgstr "Payments you received aggregated by period"
 
 msgid "Place your bid"
 msgstr "Place your bid"
@@ -522,20 +399,11 @@ msgstr "Place your bid"
 msgid "Please log in to create auctions."
 msgstr "Please log in to create auctions."
 
-#~ msgid "Previous"
-#~ msgstr "Previous"
-
 msgid "Product image"
 msgstr "Product image"
 
-#~ msgid "Profile"
-#~ msgstr "Profile"
-
 msgid "Reload Page"
 msgstr "Reload Page"
-
-#~ msgid "Retry the payment here"
-#~ msgstr "Retry the payment here"
 
 msgid "Retry the payment here."
 msgstr "Retry the payment here."
@@ -558,29 +426,14 @@ msgstr "Select a status for your auction"
 msgid "Select date"
 msgstr "Select date"
 
-#~ msgid "Séléctionner une langue"
-#~ msgstr "Séléctionner une langue"
-
 msgid "Sending bid..."
 msgstr "Sending bid..."
 
 msgid "Set a date to end your auction"
 msgstr "Set a date to end your auction"
 
-#~ msgid "Settings"
-#~ msgstr "Settings"
-
-#~ msgid "Sign in"
-#~ msgstr "Sign in"
-
 msgid "Sign up"
 msgstr "Sign up"
-
-#~ msgid "Sign Up"
-#~ msgstr "Sign Up"
-
-#~ msgid "Signing in..."
-#~ msgstr "Signing in..."
 
 msgid "Signing up..."
 msgstr "Signing up..."
@@ -609,23 +462,14 @@ msgstr "Sports"
 msgid "Started"
 msgstr "Started"
 
-#~ msgid "Starting Date"
-#~ msgstr "Starting Date"
-
 msgid "Starting Price"
 msgstr "Starting Price"
 
 msgid "Starting Price *"
 msgstr "Starting Price *"
 
-#~ msgid "startingPrice"
-#~ msgstr "startingPrice"
-
 msgid "Status"
 msgstr "Status"
-
-#~ msgid "Success"
-#~ msgstr "Success"
 
 msgid "Switch login/signup forms"
 msgstr "Switch login/signup forms"
@@ -639,9 +483,6 @@ msgstr "This auction has been won and paid for."
 msgid "This auction has ended with no bids."
 msgstr "This auction has ended with no bids."
 
-#~ msgid "This auction has ended."
-#~ msgstr "This auction has ended."
-
 msgid "This auction has ended. Winner is pending payment."
 msgstr "This auction has ended. Winner is pending payment."
 
@@ -654,18 +495,6 @@ msgstr "This is your auction"
 msgid "This is your bid's amount."
 msgstr "This is your bid's amount."
 
-msgid "This is your private password."
-msgstr "This is your private password."
-
-msgid "This is your public display email."
-msgstr "This is your public display email."
-
-msgid "This is your public display first name."
-msgstr "This is your public display first name."
-
-msgid "This is your public display last name."
-msgstr "This is your public display last name."
-
 msgid "This is your public first name."
 msgstr "This is your public first name."
 
@@ -677,9 +506,6 @@ msgstr "Title"
 
 msgid "Title *"
 msgstr "Title *"
-
-#~ msgid "Toggle columns"
-#~ msgstr "Toggle columns"
 
 msgid "Toggle theme"
 msgstr "Toggle theme"
@@ -708,9 +534,6 @@ msgstr "total users"
 msgid "Toys"
 msgstr "Toys"
 
-#~ msgid "Track Auctions Effortlessly"
-#~ msgstr "Track Auctions Effortlessly"
-
 msgid "Track Auctions. Effortlessly"
 msgstr "Track Auctions. Effortlessly"
 
@@ -722,12 +545,6 @@ msgstr "Try Again"
 
 msgid "Update auction"
 msgstr "Update auction"
-
-#~ msgid "Update Auction"
-#~ msgstr "Update Auction"
-
-#~ msgid "Update my profile"
-#~ msgstr "Update my profile"
 
 msgid "Update your auction"
 msgstr "Update your auction"
@@ -753,9 +570,6 @@ msgstr "Upload your avatar"
 msgid "Upload your new avatar?"
 msgstr "Upload your new avatar?"
 
-#~ msgid "Uploading avatar..."
-#~ msgstr "Uploading avatar..."
-
 msgid "Uploading image..."
 msgstr "Uploading image..."
 
@@ -765,9 +579,6 @@ msgstr "user"
 msgid "User profile card"
 msgstr "User profile card"
 
-#~ msgid "View"
-#~ msgstr "View"
-
 msgid "View auction"
 msgstr "View auction"
 
@@ -776,9 +587,6 @@ msgstr "Welcome back!"
 
 msgid "Won auctions"
 msgstr "Won auctions"
-
-#~ msgid "You are the Highest Bidder"
-#~ msgstr "You are the Highest Bidder"
 
 msgid "You did not pay this auction yet. Contact us for more information."
 msgstr "You did not pay this auction yet. Contact us for more information."
@@ -806,9 +614,6 @@ msgstr "You successfully updated your profile!"
 
 msgid "You won and paid for this auction."
 msgstr "You won and paid for this auction."
-
-#~ msgid "You won this auction"
-#~ msgstr "You won this auction"
 
 msgid "You won! Proceed to payment."
 msgstr "You won! Proceed to payment."
