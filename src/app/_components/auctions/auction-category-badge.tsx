@@ -22,7 +22,7 @@ export const AuctionCategoryBadge: FC<Props> = (props) => {
   const { i18n } = useLingui();
 
   return (
-    <Badge className={cn(AuctionCategoryClassNames[category], className)}>
+    <Badge className={cn(className, AuctionCategoryClassNames[category])}>
       {i18n._(AuctionCategoryToMessage[category] as MessageDescriptor)}
     </Badge>
   );

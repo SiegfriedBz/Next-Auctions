@@ -38,7 +38,7 @@ export const NavListItem: FC<ListItemProps> = (props) => {
   return (
     <li {...rest}>
       <NavigationMenuLink asChild>
-        <Link href={href} className={linkClassName}>
+        <Link href={href} className={cn(linkClassName, "min-w-full")}>
           {Icon && <Icon size={16} className={iconClassName} />}
           {title}
         </Link>

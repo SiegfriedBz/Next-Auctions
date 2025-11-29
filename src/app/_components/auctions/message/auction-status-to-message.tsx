@@ -13,7 +13,9 @@ export const AuctionStatusToMessage: Record<AuctionStatus, MessageDescriptor> =
   };
 
 export const AuctionStatusClassNames: Record<AuctionStatus, string> = {
-  [AuctionStatusSchema.enum.CLOSED]: "bg-amber-600",
-  [AuctionStatusSchema.enum.DRAFT]: "bg-yellow-500",
-  [AuctionStatusSchema.enum.OPEN]: "bg-blue-500",
+  [AuctionStatusSchema.enum.CLOSED]:
+    "bg-amber-600 text-accent dark:text-accent-foreground",
+  [AuctionStatusSchema.enum.DRAFT]: "bg-yellow-500 dark:text-accent",
+  [AuctionStatusSchema.enum.OPEN]:
+    "bg-blue-500 text-accent dark:text-accent-foreground",
 };

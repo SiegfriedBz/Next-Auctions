@@ -21,13 +21,22 @@ export const AuctionCategoryToMessage: Record<
 };
 
 export const AuctionCategoryClassNames: Record<AuctionCategory, string> = {
-  [AuctionCategorySchema.enum.ART]: "bg-blue-500",
-  [AuctionCategorySchema.enum.AUTOMOTIVE]: "bg-red-400",
-  [AuctionCategorySchema.enum.COLLECTIBLES]: "bg-gray-500",
-  [AuctionCategorySchema.enum.ELECTRONICS]: "bg-gray-500",
-  [AuctionCategorySchema.enum.FASHION]: "bg-red-400",
-  [AuctionCategorySchema.enum.HOME]: "bg-gray-300",
-  [AuctionCategorySchema.enum.MUSIC]: "bg-amber-500",
-  [AuctionCategorySchema.enum.SPORTS]: "bg-red-400",
-  [AuctionCategorySchema.enum.TOYS]: "bg-red-200",
+  [AuctionCategorySchema.enum.ART]:
+    "bg-blue-500 text-accent dark:text-accent-foreground",
+  [AuctionCategorySchema.enum.AUTOMOTIVE]:
+    "bg-red-400 text-accent dark:text-accent-foreground",
+  [AuctionCategorySchema.enum.COLLECTIBLES]:
+    "bg-gray-500 text-accent dark:text-accent-foreground",
+  [AuctionCategorySchema.enum.ELECTRONICS]:
+    "bg-gray-500 text-accent dark:text-accent-foreground",
+  [AuctionCategorySchema.enum.FASHION]:
+    "bg-red-400 text-accent dark:text-accent-foreground",
+  [AuctionCategorySchema.enum.HOME]:
+    "bg-gray-300 text-accent-foreground dark:text-accent",
+  [AuctionCategorySchema.enum.MUSIC]:
+    "bg-amber-500 text-accent dark:text-accent-foreground",
+  [AuctionCategorySchema.enum.SPORTS]:
+    "bg-red-400 text-accent dark:text-accent-foreground",
+  [AuctionCategorySchema.enum.TOYS]:
+    "bg-red-200 text-accent-foreground dark:text-accent",
 };

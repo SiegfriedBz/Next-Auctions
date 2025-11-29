@@ -81,9 +81,6 @@ export const SignUpForm: FC<Props> = (props) => {
               <FormControl>
                 <Input placeholder="jane doe" {...field} />
               </FormControl>
-              <FormDescription>
-                <Trans>This is your public display first name.</Trans>
-              </FormDescription>
               <FormMessage />
             </FormItem>
           )}
@@ -100,9 +97,6 @@ export const SignUpForm: FC<Props> = (props) => {
               <FormControl>
                 <Input placeholder="Doe" {...field} />
               </FormControl>
-              <FormDescription>
-                <Trans>This is your public display last name.</Trans>
-              </FormDescription>
               <FormMessage />
             </FormItem>
           )}
@@ -123,9 +117,6 @@ export const SignUpForm: FC<Props> = (props) => {
                   {...field}
                 />
               </FormControl>
-              <FormDescription>
-                <Trans>This is your public display email.</Trans>
-              </FormDescription>
               <FormMessage />
             </FormItem>
           )}
@@ -142,9 +133,6 @@ export const SignUpForm: FC<Props> = (props) => {
               <FormControl>
                 <Input type="password" placeholder="******" {...field} />
               </FormControl>
-              <FormDescription>
-                <Trans>This is your private password.</Trans>
-              </FormDescription>
               <FormMessage />
             </FormItem>
           )}

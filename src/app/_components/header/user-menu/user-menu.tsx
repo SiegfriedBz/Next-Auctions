@@ -42,7 +42,7 @@ export const UserMenu: FC<Props> = (props) => {
       </NavigationMenuTrigger>
 
       <NavigationMenuContent>
-        <ul className="grid w-44 gap-2 grid-cols-1">
+        <ul className="grid w-58 gap-2 grid-cols-1">
           {userNavLinks.map((c) => (
             <NavListItem
               key={c.title.id}
