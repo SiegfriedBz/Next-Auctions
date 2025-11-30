@@ -1,8 +1,24 @@
+[![Live Demo](https://img.shields.io/badge/Live-Demo-blue)](https://next-auctions.vercel.app/en)
+
 # Next Auctions – Real-Time Full-Stack Auction Platform
 
-A real-time auction platform built with Next.js, TypeScript, Supabase, I18n multilingual support, and Stripe. Features live bidding, payments, notifications, translations (_French_, _English_, _German_), and responsive design.
+A real-time auction platform built with Next.js, TypeScript, Supabase, I18n, and Stripe. Features live bidding, payments, notifications, translations (_French_, _English_, _German_), and responsive design.
 
-## 🎬 Demo / GIF Walkthrough
+> I built GavL – Next Auctions to challenge myself with **real-time full-stack development**: **Next.js** + **TypeScript** for the frontend, **Supabase** for **live data** and **notifications**, and **Stripe** for payments. The goal was to create a complete, production-style auction platform handling **multi-user bidding**, **server-side filters**, **real-time notifications**, and a **responsive**, **multilingual** UI. This project covers the full auction lifecycle—from creation to payment—showcasing backend workflows, frontend UX, and live updates across multiple clients.
+
+---
+
+## 🚀 Quick Start
+
+### 1. Try the Demo: [🌐 Live Demo](https://next-auctions.vercel.app/en)
+
+### 2. Create new auctions & Bid on existing ones
+
+💡 Tip: Use Stripe test mode with the card number 4242 4242 4242 4242 for testing payments.
+
+---
+
+## 🎬 Demo & GIF Walkthrough
 
 **Desktop View**
 ![Desktop View](assets/desktop-view.01.gif)
@@ -35,7 +51,7 @@ A real-time auction platform built with Next.js, TypeScript, Supabase, I18n mult
 - **Payments:** Stripe (Checkout & Webhooks)  
 - **UI & Validation:** Shadcn/UI, React-Hook-Form, Zod  
 - **Data Display:** TanStack Table
-- **Nuqs:** Server-side filters / sorting / pagination
+- **Nuqs:** Server-side Filters, Sorting & Pagination
 - **File Uploads:** Uppy  
 - **Testing:** Jest  
 - **UX Enhancements:** React Suspense & skeleton loaders for smooth transitions  
@@ -144,8 +160,8 @@ sequenceDiagram
 ### 7. Stats & Charts
 
 Dashboards display user-specific and global statistics, totals, and charts for payments received or made.  
-All data is fetched through the same domain-driven service/repository layer to ensure consistency.
-UI transitions leverage `React Suspense` and `skeleton loaders` for smooth UX during data fetching.
+All data is fetched through the same domain-driven service/repository layer for consistency.
+UI transitions leverage `React Suspense` and `skeleton loaders` for smooth user experience during data fetching.
 
 ## 🚀 How to Run Locally
 
@@ -201,8 +217,6 @@ Live notifications are sent for the following events:
 - Auction closed with bids → auction owner & auction winner (`NEW_AUCTION_WON` notification)
 - Auction winner has paid → auction owner (`NEW_PAYMENT` notification)
 
-**Tip**: Use Stripe test mode with test card numbers (4242...) for local testing.
-
 ### 7.Start the development server
 
 ```bash
@@ -217,7 +231,15 @@ pnpm test
 
 ---
 
-GavL – Next Auctions was designed as a portfolio project to explore scalable, real-time web app patterns with Supabase, i18n, Stripe, and Next.js.
+🎯 Project Summary
+GavL – Next Auctions is a portfolio project demonstrating scalable, real-time web app patterns using:
+
+- Next.js
+- Supabase
+- i18n
+- Stripe
+
+---
 
 ## Author
 
