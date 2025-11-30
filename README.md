@@ -1,16 +1,32 @@
-# ⚖️ GavL - Next Auctions – Real-Time Full-Stack Auction Platform
+# Next Auctions – Real-Time Full-Stack Auction Platform
 
 A real-time auction platform built with Next.js, TypeScript, Supabase, I18n multilingual support, and Stripe. Features live bidding, payments, notifications, translations (_French_, _English_, _German_), and responsive design.
 
-## 🎥 Demo / Video Walkthrough
+## 🎬 Demo / GIF Walkthrough
 
-Walkthrough playlist: [YouTube Playlist](https://www.youtube.com/watch?v=hLpAKQV34Ok&list=PLrUSgs1cNYobkqnvP3VKCgiZ8tjg8Zhbj&index=3)
+**Desktop View**
+![Desktop View](assets/desktop-view.01.gif)
 
-Videos cover:
+**Login Flow**
+![Login Flow](assets/login.02.gif)
 
-- Real-time bidding with multiple users and notifications  
-- Auction end workflow with Stripe Checkout payment  
-- Responsiveness: mobile and desktop views  
+**Create Auctions**
+![Create Auctions](assets/create-auctions.03.gif)
+
+**Real-time Bidding (2 Users)**
+![Bid - 2 Users](assets/bid-2-users.04.gif)
+
+**Real-time Bidding (3 Users)**
+![Bid - 3 Users](assets/bid-3-users.05.gif)
+
+**Auction Won Notifications**
+![Auction Won Notifications](assets/auction-won-notifications.06.gif)
+
+**Stripe Payment Flow**
+![Stripe Flow](assets/stripe-flow.07.gif)
+
+**Payments Dashboard**
+![Payments Dashboard](assets/payments-dashboard.08.gif)
 
 ## 🧱 Tech Stack
 
@@ -19,14 +35,14 @@ Videos cover:
 - **Payments:** Stripe (Checkout & Webhooks)  
 - **UI & Validation:** Shadcn/UI, React-Hook-Form, Zod  
 - **Data Display:** TanStack Table
-- **Nuqs:** server-side filters / sorting / pagination
+- **Nuqs:** Server-side filters / sorting / pagination
 - **File Uploads:** Uppy  
 - **Testing:** Jest  
 - **UX Enhancements:** React Suspense & skeleton loaders for smooth transitions  
 
 ## ⚙️ Architecture Overview
 
-GavL – Next Auctions follows a lightweight domain-driven design structure for clarity and maintainability.
+GavL – Next Auctions follows a lightweight domain-driven design structure to separate business logic from infrastructure concerns, ensuring clarity and maintainability.
 
 - **Domains:** Core types and Zod schemas for all entities (Auction, Bid, Notification, Payment, User)  
 - **Ports:** Repository interfaces defining all data access methods  
@@ -42,10 +58,10 @@ GavL – Next Auctions follows a lightweight domain-driven design structure for 
 - Real-time bidding for multiple users  
 - Live notifications (bids, auction wins, payments)  
 - Stripe Checkout integration for secure payments  
-- Auction creation, editing, and opening workflows  
-- Dashboard with charts and totals for payments  
-- Responsive mobile & desktop UI  
+- Auction creation and editing
+- Payments Dashboard with charts and totals  
 - Multilingual support (_French_, _English_, _German_)  
+- Responsive mobile & desktop UI
 - Smooth loading states with React Suspense and skeleton placeholders  
 
 ## 🔁 Key Workflows
@@ -206,6 +222,7 @@ GavL – Next Auctions was designed as a portfolio project to explore scalable, 
 ## Author
 
 Built solo by **Siegfried Bozza**.
+Full-Stack Developer   React/Next.js & Web3 Enthusiast
 
 💼 [LinkedIn](https://www.linkedin.com/in/siegfriedbozza/)
 🐙 [GitHub](https://github.com/SiegfriedBz)
