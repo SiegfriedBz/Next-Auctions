@@ -1,5 +1,6 @@
 [![Live Demo](https://img.shields.io/badge/Live-Demo-blue)](https://next-auctions.vercel.app/en)
 
+
 # Next Auctions – Real-Time Full-Stack Auction Platform
 
 A real-time auction platform built with Next.js, TypeScript, Supabase, I18n, and Stripe. Features live bidding, payments, notifications, translations (_French_, _English_, _German_), and responsive design.
@@ -228,16 +229,6 @@ pnpm dev
 ```bash
 pnpm test
 ```
-
----
-
-🎯 Project Summary
-GavL – Next Auctions is a portfolio project demonstrating scalable, real-time web app patterns using:
-
-- Next.js
-- Supabase
-- i18n
-- Stripe
 
 ---
 
