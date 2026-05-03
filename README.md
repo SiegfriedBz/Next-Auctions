@@ -3,7 +3,7 @@
 
 # Next Auctions – Real-Time Full-Stack Auction Platform
 
-A real-time auction platform built with Next.js, TypeScript, Supabase, I18n, and Stripe. Features live bidding, payments, notifications, translations (_French_, _English_, _German_), and responsive design.
+A real-time auction platform built with Next.js, TypeScript, Supabase, Lingui, and Stripe. Features live bidding, payments, notifications, and responsive design.
 
 > I built GavL – Next Auctions to challenge myself with **real-time full-stack development**: **Next.js** + **TypeScript** for the frontend, **Supabase** for **live data** and **notifications**, and **Stripe** for payments. The goal was to create a complete, production-style auction platform handling **multi-user bidding**, **server-side filters**, **real-time notifications**, and a **responsive**, **multilingual** UI. This project covers the full auction lifecycle—from creation to payment—showcasing backend workflows, frontend UX, and live updates across multiple clients.
 
@@ -21,33 +21,75 @@ A real-time auction platform built with Next.js, TypeScript, Supabase, I18n, and
 
 ## 🎬 Demo & GIF Walkthrough
 
-**Desktop View**
+### **Desktop View**
+<div align="center">
+
 ![Desktop View](assets/desktop-view.01.gif)
 
+</div>
+
+### **Mobile View**
+<div align="center">
+
 **Login Flow**
+
 ![Login Flow](assets/login.02.gif)
 
+</div>
+
+<div align="center">
+
 **Create Auctions**
+
 ![Create Auctions](assets/create-auctions.03.gif)
 
+</div>
+
+<div align="center">
+
 **Real-time Bidding (2 Users)**
+
 ![Bid - 2 Users](assets/bid-2-users.04.gif)
 
+</div>
+
+<div align="center">
+
 **Real-time Bidding (3 Users)**
+
 ![Bid - 3 Users](assets/bid-3-users.05.gif)
 
+</div>
+
+<div align="center">
+
 **Auction Won Notifications**
+
 ![Auction Won Notifications](assets/auction-won-notifications.06.gif)
 
+</div>
+
+<div align="center">
+
 **Stripe Payment Flow**
+
 ![Stripe Flow](assets/stripe-flow.07.gif)
 
+</div>
+
+<div align="center">
+
 **Payments Dashboard**
+
 ![Payments Dashboard](assets/payments-dashboard.08.gif)
+
+</div>
 
 ## 🧱 Tech Stack
 
 - **Frontend:** React, Next.js, TypeScript  
+- **Internationalization:** Lingui (French, English, German)
+- **Linting & Formatting:** Biome
 - **Backend & Database:** Supabase (Realtime, Edge Functions, CRON)  
 - **Payments:** Stripe (Checkout & Webhooks)  
 - **UI & Validation:** Shadcn/UI, React-Hook-Form, Zod  
@@ -135,6 +177,7 @@ sequenceDiagram
     CRON ->> Edge: Trigger close-auctions function
     Edge ->> Auctions: Update auction status to CLOSED
     Auctions ->> Notifications: Insert NEW_AUCTION_WON for owner & highest bidder (Trigger: Auction Closed with Bid)
+    Notifications ->> Clients: Broadcast changes via Supabase Realtime
 ```
 
 ### 6. Stripe Checkout & Webhook
@@ -197,6 +240,9 @@ SUPABASE_SERVICE_ROLE_KEY= # Secret service role key for server-side actions (ke
 NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY= # Public key for Stripe JS (client-side)
 STRIPE_SECRET_KEY= # Secret key for server-side Stripe actions (keep private!)
 STRIPE_WEBHOOK_SECRET= # Secret used to verify Stripe webhooks (keep private!)
+
+# Footer (optional)
+ADMIN_LINK= # URL for the footer credit link (defaults to https://github.com/SiegfriedBz if unset)
 ```
 
 ### 4.Push Supabase database migrations & deploy Supabase Edge Function
