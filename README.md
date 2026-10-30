@@ -1,230 +1,187 @@
 [![Live Demo](https://img.shields.io/badge/Live-Demo-blue)](https://next-auctions.vercel.app/en)
 
+# GavL – Next Auctions
 
-# Next Auctions – Real-Time Full-Stack Auction Platform
+An auction platform built with **Next.js**, **TypeScript**, **Supabase** and **Stripe** (test mode): create auctions, bid, get notified in real time when you are outbid or win, and pay the winning bid through Stripe Checkout. The UI is in English, French and German.
 
-A real-time auction platform built with Next.js, TypeScript, Supabase, Lingui, and Stripe. Features live bidding, payments, notifications, and responsive design.
-
-> I built GavL – Next Auctions to challenge myself with **real-time full-stack development**: **Next.js** + **TypeScript** for the frontend, **Supabase** for **live data** and **notifications**, and **Stripe** for payments. The goal was to create a complete, production-style auction platform handling **multi-user bidding**, **server-side filters**, **real-time notifications**, and a **responsive**, **multilingual** UI. This project covers the full auction lifecycle—from creation to payment—showcasing backend workflows, frontend UX, and live updates across multiple clients.
-
----
-
-## 🚀 Quick Start
-
-### 1. Try the Demo: [🌐 Live Demo](https://next-auctions.vercel.app/en)
-
-### 2. Create new auctions & Bid on existing ones
-
-💡 Tip: Use Stripe test mode with the card number 4242 4242 4242 4242 for testing payments.
+I built it from September to November 2025 to practise full-stack work around a database that does most of the work: highest-bid tracking and notifications run in Postgres triggers, access rules in Row Level Security, and the app and the Edge Function stay thin. It is a personal project, not a production marketplace: bid and payment rules are not all enforced on the server yet (see [Known bugs](#known-bugs)).
 
 ---
 
-## 🎬 Demo & GIF Walkthrough
+## Quick start
 
-### **Desktop View**
-<div align="center">
+1. Open the [live demo](https://next-auctions.vercel.app/en).
+2. Sign up (email and password, no confirmation email), create an auction or bid on an open one.
+3. To pay for an auction you won, use Stripe's test card `4242 4242 4242 4242`.
+
+---
+
+## Demo
+
+### Desktop
 
 ![Desktop View](assets/desktop-view.01.gif)
 
-</div>
+### Mobile
 
-### **Mobile View**
-<div align="center">
-
-**Login Flow**
+**Login**
 
 ![Login Flow](assets/login.02.gif)
 
-</div>
-
-<div align="center">
-
-**Create Auctions**
+**Create auctions**
 
 ![Create Auctions](assets/create-auctions.03.gif)
 
-</div>
-
-<div align="center">
-
-**Real-time Bidding (2 Users)**
+**Bidding, with live notifications (2 users)**
 
 ![Bid - 2 Users](assets/bid-2-users.04.gif)
 
-</div>
-
-<div align="center">
-
-**Real-time Bidding (3 Users)**
+**Bidding, with live notifications (3 users)**
 
 ![Bid - 3 Users](assets/bid-3-users.05.gif)
 
-</div>
-
-<div align="center">
-
-**Auction Won Notifications**
+**Auction won notifications**
 
 ![Auction Won Notifications](assets/auction-won-notifications.06.gif)
 
-</div>
-
-<div align="center">
-
-**Stripe Payment Flow**
+**Stripe payment**
 
 ![Stripe Flow](assets/stripe-flow.07.gif)
 
-</div>
-
-<div align="center">
-
-**Payments Dashboard**
+**Payments dashboard**
 
 ![Payments Dashboard](assets/payments-dashboard.08.gif)
 
-</div>
+---
 
-## 🧱 Tech Stack
+## Tech stack
 
-- **Frontend:** React, Next.js, TypeScript  
-- **Internationalization:** Lingui (French, English, German)
-- **Linting & Formatting:** Biome
-- **Backend & Database:** Supabase (Realtime, Edge Functions, CRON)  
-- **Payments:** Stripe (Checkout & Webhooks)  
-- **UI & Validation:** Shadcn/UI, React-Hook-Form, Zod  
-- **Data Display:** TanStack Table
-- **Nuqs:** Server-side Filters, Sorting & Pagination
-- **File Uploads:** Uppy  
-- **Testing:** Jest  
-- **UX Enhancements:** React Suspense & skeleton loaders for smooth transitions  
+| Area | Technologies |
+|------|--------------|
+| Frontend | React, Next.js, TypeScript, shadcn/ui, React Hook Form, Zod, TanStack Table, Uppy (image uploads), React Suspense with skeleton loaders |
+| URL state | nuqs: filters, sorting and pagination in the URL, applied on the server |
+| Internationalization | Lingui: English, French and German, plus a pseudo-locale for testing |
+| Backend and database | Supabase: Postgres with triggers and Row Level Security, Realtime (private broadcast channels), an Edge Function to close auctions, called every 5 minutes by pg_cron |
+| Payments | Stripe Checkout and a signature-verified webhook |
+| Quality | Jest, Biome, Husky; CI runs lint, build and test coverage |
 
-## ⚙️ Architecture Overview
+## Architecture
 
-GavL – Next Auctions follows a lightweight domain-driven design structure to separate business logic from infrastructure concerns, ensuring clarity and maintainability.
+The code follows a ports-and-adapters layout, so the business code does not depend on Supabase directly:
 
-- **Domains:** Core types and Zod schemas for all entities (Auction, Bid, Notification, Payment, User)  
-- **Ports:** Repository interfaces defining all data access methods  
-- **Services:** Business logic and workflows  
-- **Instances:** Service instances wired with Supabase repository implementations  
-- **Infra (Supabase):** Implements data repositories that map DB rows to domain models and safely handle RLS-protected operations  
-- **Supabase Realtime:** Broadcasts live notifications for `NEW_BID`, `NEW_AUCTION_WON`, and `NEW_PAYMENT` events.  
-- **Supabase CRON + Edge Function:** Closes auctions automatically when `endAt` is reached  
-- **Stripe Webhook:** Updates auctions’ `paidAt` via Service Role to safely bypass RLS
+- **Domains:** types and Zod schemas for each entity (Auction, Bid, Notification, Payment, User).
+- **Ports:** repository interfaces for all data access.
+- **Services:** business logic and workflows, written against the ports.
+- **Instances:** services wired to the Supabase repositories.
+- **Infra (Supabase):** repository implementations that map database rows to domain models.
 
-## 🧩 Key Features
+Much of the behaviour lives in the database:
 
-- Real-time bidding for multiple users  
-- Live notifications (bids, auction wins, payments)  
-- Stripe Checkout integration for secure payments  
-- Auction creation and editing
-- Payments Dashboard with charts and totals  
-- Multilingual support (_French_, _English_, _German_)  
-- Responsive mobile & desktop UI
-- Smooth loading states with React Suspense and skeleton placeholders  
+- **Triggers** (`SECURITY DEFINER`) keep each auction's highest bid and bidder up to date and insert `NEW_BID`, `NEW_AUCTION_WON` and `NEW_PAYMENT` notifications.
+- **Row Level Security:** owners cannot edit or delete an auction that has bids, but can close one with none; users cannot delete their account while they have bids on open auctions; each notification is visible only to its recipient. A bid amount is unique per auction.
+- **Realtime:** each user listens on a private broadcast channel, `user:<id>:notifications`. Only notifications are real time; other viewers of an auction do not see its price change live.
+- **Schemas:** declarative Supabase schemas, with migrations generated by diff.
 
-## 🔁 Key Workflows
-
-This project covers full auction lifecycles, multi-user interactions, real-time notifications, payments, and responsive UI across multiple devices.
+## Key workflows
 
 ### 1. Authentication
 
-Supabase email/password sign-up and login (no email confirmation for simplicity).
+Supabase email and password sign-up and login (no email confirmation, for simplicity).
 
-### 2. Server-side Filter / Sort / Pagination on Auctions Tables
+### 2. Filter, sort and paginate auctions on the server
 
-Filters, sorting, and pagination are URL-driven via **nuqs**.  
-The server reads `searchParams` and performs filtering, ordering, and pagination via the `auctions().listing` service, which delegates to the `SupabaseAuctionRepository`.
-This approach allows users to share URLs and ensures consistent results between client and server.
+Filters, sorting and pagination live in the URL (nuqs). The server reads `searchParams` and calls the `auctions().listing` service, which delegates to `SupabaseAuctionRepository`, so a URL can be shared and gives the same results.
 
-### 3. Auction Creation & Management
+### 3. Create and manage auctions
 
-Authenticated users can create draft auctions, add images, edit auctions, and open them for bidding.  
-Owners cannot edit auctions that already have bids or are closed.
+Authenticated users create draft auctions, add images, edit them and open them for bidding. Owners cannot edit auctions that already have bids or are closed.
 
-### 4. Real-time Bidding
+### 4. Bidding and notifications
 
-Multiple users can place bids simultaneously.
-When a new bid is submitted, the auction’s highest bid and highest bidder are updated, and relevant users (owner and previous bidders) are notified (`NEW_BID` notification) in real time via **Supabase Realtime**.
+When a bid is inserted, a trigger updates the auction's highest bid and bidder and inserts a `NEW_BID` notification for the owner and previous bidders, which reaches them on their private Realtime channel.
 
 ```mermaid
 sequenceDiagram
-    participant User as Logged-in User
-    participant Bids as Bids Table
-    participant Auctions as Auctions Table
-    participant Notifications as Notifications Table
-    participant Clients as Connected Clients
+    participant User as Logged-in user
+    participant Bids as Bids table
+    participant Auctions as Auctions table
+    participant Notifications as Notifications table
+    participant Recipient as Each recipient's private channel
 
     User ->> Bids: Insert new bid
-    Bids ->> Auctions: Update highest bid info (Trigger: New Bid)
-    Bids ->> Notifications: Insert NEW_BID for owner & previous bidders (Trigger: New Bid)
-    Notifications ->> Clients: Broadcast changes via Supabase Realtime
+    Bids ->> Auctions: Update highest bid (trigger)
+    Bids ->> Notifications: Insert NEW_BID for owner and previous bidders (trigger)
+    Notifications ->> Recipient: Broadcast (trigger)
 ```
 
-### 5. Auction End (CRON + Edge Function)
+### 5. Closing auctions (scheduled Edge Function)
 
-Auctions close automatically at their scheduled end time via a Supabase CRON job that periodically triggers the `close-auctions` Edge Function.
-If the auction had any bids, both the auction owner and the winner are notified (`NEW_AUCTION_WON`) in real time.
+A pg_cron job calls the `close-auctions` Edge Function every 5 minutes, and the function sets every auction past its `endAt` to `CLOSED`. If the auction had bids, a trigger notifies the owner and the winner (`NEW_AUCTION_WON`). The job is a migration that reads the project URL and key from Vault: see [Run locally](#run-locally).
 
 ```mermaid
 sequenceDiagram
-    participant CRON as Supabase CRON
+    participant Scheduler as pg_cron job (every 5 minutes)
     participant Edge as close-auctions Edge Function
-    participant Auctions as Auctions Table
-    participant Notifications as Notifications Table
-    participant Clients as Connected Clients
+    participant Auctions as Auctions table
+    participant Notifications as Notifications table
+    participant Recipient as Each recipient's private channel
 
-    CRON ->> Edge: Trigger close-auctions function
-    Edge ->> Auctions: Update auction status to CLOSED
-    Auctions ->> Notifications: Insert NEW_AUCTION_WON for owner & highest bidder (Trigger: Auction Closed with Bid)
-    Notifications ->> Clients: Broadcast changes via Supabase Realtime
+    Scheduler ->> Edge: Call the function
+    Edge ->> Auctions: Set status to CLOSED
+    Auctions ->> Notifications: Insert NEW_AUCTION_WON for owner and winner (trigger)
+    Notifications ->> Recipient: Broadcast
 ```
 
-### 6. Stripe Checkout & Webhook
+### 6. Stripe Checkout and webhook
 
-Winning bidders complete payment via Stripe Checkout.
-Once a payment succeeds, the `/api/stripe/webhook` updates the auction’s `paidAt` field (via a Service Role Supabase client to bypass RLS), and sends a `NEW_PAYMENT` notification to the auction owner in real time.
+The winner pays through Stripe Checkout. `/api/stripe/webhook` reads the raw body, verifies Stripe's signature (`constructEvent`, `400` on a bad signature), then sets the auction's `paidAt` with a service-role Supabase client. A trigger that fires only when `paidAt` goes from empty to set sends `NEW_PAYMENT` to the owner once. The `/api` routes are excluded from the i18n middleware.
 
 ```mermaid
 sequenceDiagram
-    participant Winner as Auction Winner
+    participant Winner as Auction winner
     participant Stripe as Stripe Checkout
     participant Webhook as /api/stripe/webhook
-    participant Auctions as Auctions Table
-    participant Notifications as Notifications Table
-    participant Clients as Connected Clients
+    participant Auctions as Auctions table
+    participant Notifications as Notifications table
 
     Winner ->> Stripe: Complete payment
-    Stripe ->> Webhook: Send payment event
-    Webhook ->> Auctions: Update paidAt (using Service Role)
-    Auctions ->> Notifications: Insert NEW_PAYMENT for auction owner (Trigger: Auction Paid)
-    Notifications ->> Clients: Broadcast changes via Supabase Realtime
+    Stripe ->> Webhook: checkout event (signed)
+    Webhook ->> Auctions: Set paidAt (service role)
+    Auctions ->> Notifications: Insert NEW_PAYMENT for the owner (trigger, once)
 ```
 
-### 7. Stats & Charts
+### 7. Stats and charts
 
-Dashboards display user-specific and global statistics, totals, and charts for payments received or made.  
-All data is fetched through the same domain-driven service/repository layer for consistency.
-UI transitions leverage `React Suspense` and `skeleton loaders` for smooth user experience during data fetching.
+Dashboards show each user's payments made and received, plus global totals and charts, through the same service and repository layer.
 
-## 🚀 How to Run Locally
+---
 
-### 1. Clone the repository
+## Known bugs
+
+- **Bid integrity.** The server does not check that a bid beats the current highest (only the form does). Row Level Security lets bidders edit or delete their own bids while an auction is open, and owners can bid on their own auctions. Bids are accepted between `end_at` and the next scheduled close, up to 5 minutes later. `update_auction_highest_bid` reads `MAX` without a lock, so two near-simultaneous bids can store a stale highest bid. Fix: a `place_bid` function that locks the auction row and checks the amount and the deadline, and no update or delete on bids.
+- **Payment checks are UI-only.** `createCheckoutSession` does not check on the server that the caller is the winner, or that the auction is closed and unpaid; the webhook trusts `metadata.auctionId`.
+- **Webhook retries** are not deduplicated by `event.id`; a retry rewrites `paidAt`, but the payment notification still fires once.
+
+## Known limitations
+
+- **Tests cover services and mappers only.** 66 Jest tests in 13 files test the services against mocked repositories, the mappers and the wiring. Nothing tests the triggers, the RLS policies, the webhook, the Edge Function or the server actions.
+- `updateAuctionPaidAt` is a server action with no auth check of its own; today only the webhook route uses it.
+
+---
+
+## Run locally
+
+### 1. Clone and install
 
 ```bash
-git clone https://github.com/SiegfriedBz/next_auctions.git
-cd next_auctions
-```
-
-### 2. Install dependencies
-
-```bash
+git clone https://github.com/SiegfriedBz/Next-Auctions.git
+cd Next-Auctions
 pnpm install
 ```
 
-### 3. Set up environment variables
+### 2. Environment variables
 
-Create a `.env.local` file and set the following variables (based on .env.example):
+Create `.env.local` from `.env.example`:
 
 ```bash
 # Application
@@ -245,43 +202,46 @@ STRIPE_WEBHOOK_SECRET= # Secret used to verify Stripe webhooks (keep private!)
 ADMIN_LINK= # URL for the footer credit link (defaults to https://github.com/SiegfriedBz if unset)
 ```
 
-### 4.Push Supabase database migrations & deploy Supabase Edge Function
+### 3. Vault secrets for the close-auctions schedule
+
+In your Supabase project's SQL editor, store the project URL and the `service_role` key (Project Settings → API keys):
+
+```sql
+select vault.create_secret('https://<project-ref>.supabase.co', 'project_url');
+select vault.create_secret('<service_role key>', 'service_role_key');
+```
+
+### 4. Database and Edge Function
 
 ```bash
 supabase db push
 supabase functions deploy close-auctions
 ```
 
-### 5.Set up **CRON**
+The migrations create the notifications broadcast trigger and the `realtime.messages` policy that lets each user listen only on their own `user:<id>:notifications` channel. They also schedule the pg_cron job `Cron => close auction`, which posts to `/functions/v1/close-auctions` every 5 minutes with the `service_role` key as `Authorization: Bearer`. The function has `verify_jwt = true`, so the call needs a JWT. If the two secrets are missing, that migration skips the job and logs a warning; create them, then run the `DO` block of `supabase/migrations/20261030082733_schedule_close_auctions.sql` by hand. The live project runs the same job, created in the dashboard (Integrations → Cron) with the key written into it.
 
-Schedule the close-auctions **Supabase Edge Function** to run periodically to automatically close auctions at their endAt time.
-
-### 6.Realtime Notifications (**Supabase Realtime**)
-
-Live notifications are sent for the following events:
-
-- New bid on an auction → auction owner & all previous bidders (`NEW_BID` notification)
-- Auction closed with bids → auction owner & auction winner (`NEW_AUCTION_WON` notification)
-- Auction winner has paid → auction owner (`NEW_PAYMENT` notification)
-
-### 7.Start the development server
+### 5. Start
 
 ```bash
 pnpm dev
 ```
 
-## 🧪 Testing - Backend
+## Tests
 
 ```bash
 pnpm test
 ```
 
+Unit tests (Jest) for the services, with mocked repositories, and for the mappers. CI runs `pnpm lint:check`, `pnpm build` and `pnpm test:coverage` on GitHub Actions.
+
 ---
+
+## License
+
+MIT.
 
 ## Author
 
-Built solo by **Siegfried Bozza**.
-Full-Stack Developer   React/Next.js & Web3 Enthusiast
+Built solo by **Siegfried Bozza**, Full-Stack Web3 Engineer.
 
-💼 [LinkedIn](https://www.linkedin.com/in/siegfriedbozza/)
-🐙 [GitHub](https://github.com/SiegfriedBz)
+[LinkedIn](https://www.linkedin.com/in/siegfriedbozza/) · [GitHub](https://github.com/SiegfriedBz)
