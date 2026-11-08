@@ -22,7 +22,9 @@ const userAvatarVariants = cva(
 );
 
 type Props = {
-  user: Pick<User, "email" | "firstName" | "lastName" | "avatarUrl">;
+  user: Pick<User, "firstName" | "lastName" | "avatarUrl"> & {
+    email?: string | null;
+  };
   className?: string;
   avatarClassName?: string;
   variant?: "default" | "hover";
@@ -56,9 +58,11 @@ export const UserAvatar: FC<Props> = ({
           <TypographyH4 className="font-medium capitalize">
             {getFullName(user)}
           </TypographyH4>
-          <TypographySmall className="max-[480px]:hidden mt-1">
-            {user.email}
-          </TypographySmall>
+          {user.email && (
+            <TypographySmall className="max-[480px]:hidden mt-1">
+              {user.email}
+            </TypographySmall>
+          )}
         </div>
       )}
     </div>

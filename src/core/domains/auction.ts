@@ -46,19 +46,20 @@ export const AuctionSchema = z.object({
 
 export type Auction = z.infer<typeof AuctionSchema>;
 
+// users_public only returns an email to its owner, and a seller's to the winner of their closed auction
+const PublicUserSchema = UserSchema.omit({
+  role: true,
+  createdAt: true,
+  updatedAt: true,
+}).extend({
+  email: z.email().nullable(),
+});
+
 // AuctionDetailsSchema for auction details page
 export const AuctionDetailsSchema = AuctionSchema.extend({
-  owner: UserSchema.omit({
-    role: true,
-    createdAt: true,
-    updatedAt: true,
-  }).nullable(),
+  owner: PublicUserSchema.nullable(),
 }).extend({
-  highestBidder: UserSchema.omit({
-    role: true,
-    createdAt: true,
-    updatedAt: true,
-  }).nullable(),
+  highestBidder: PublicUserSchema.nullable(),
 });
 
 export type AuctionDetails = z.infer<typeof AuctionDetailsSchema>;
