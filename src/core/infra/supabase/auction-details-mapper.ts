@@ -1,18 +1,20 @@
 import z from "zod";
 import { AuctionDetailsSchema } from "@/core/domains/auction";
 import { normalizeAuctionData, type SupabaseAuction } from "./auction-mapper";
-import type { SupabaseUser } from "./user-mapper";
+
+// users_public returns a null email when the viewer may not see it
+type SupabasePublicUser = {
+  id: string;
+  first_name: string;
+  last_name: string;
+  email: string | null;
+  avatar_url: string | null;
+};
 
 type SupabaseAuctionDetails = SupabaseAuction & {
-  owner: Pick<
-    SupabaseUser,
-    "id" | "email" | "first_name" | "last_name" | "avatar_url"
-  > | null;
+  owner: SupabasePublicUser | null;
 } & {
-  highest_bidder: Pick<
-    SupabaseUser,
-    "id" | "email" | "first_name" | "last_name" | "avatar_url"
-  > | null;
+  highest_bidder: SupabasePublicUser | null;
 };
 
 export const auctionDetailsMapper = (row: SupabaseAuctionDetails | null) => {

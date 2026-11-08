@@ -38,10 +38,25 @@ USING (
 );
 
 -- VIEWS 
--- 1. Create a view that only exposes partial user data
+-- 1. Create a view that only exposes partial user data.
+-- An email is only returned to its owner, and a seller's to the winner of their closed auction.
 CREATE VIEW public.users_public AS
-SELECT id, first_name, last_name, email, avatar_url
-FROM public.users;
+SELECT
+  u.id,
+  u.first_name,
+  u.last_name,
+  CASE
+    WHEN u.id = auth.uid() THEN u.email
+    WHEN EXISTS (
+      SELECT 1
+      FROM public.auctions a
+      WHERE a.owner_id = u.id
+        AND a.highest_bidder_id = auth.uid()
+        AND a.status = 'CLOSED'
+    ) THEN u.email
+  END AS email,
+  u.avatar_url
+FROM public.users u;
 
 -- 2. Create a view that only exposes a safe count
 CREATE VIEW public.users_stats AS

@@ -139,4 +139,41 @@ describe("auctionDetailsMapper", () => {
 
     expect(auctionDetailsMapper(supabaseAuctionDetails)).toEqual(expected);
   });
+
+  it("keeps an email hidden by users_public as null", () => {
+    const supabaseAuctionDetails = {
+      id: VALID_UUID,
+      owner_id: VALID_UUID,
+      title: "Vintage Guitar",
+      description: "Classic 70s guitar",
+      category: AuctionCategorySchema.enum.MUSIC,
+      status: AuctionStatusSchema.enum.DRAFT,
+      starting_price: 100,
+      storage_id: null,
+      highest_bidder_id: null,
+      highest_bid: null,
+      images: [],
+      created_at: "2025-08-01T12:00:00.000Z",
+      updated_at: "2025-08-05T12:00:00.000Z",
+      started_at: "2025-08-01T12:00:00.000Z",
+      end_at: null,
+      paid_at: null,
+      owner: {
+        id: VALID_UUID,
+        first_name: "John",
+        last_name: "Doe",
+        email: null,
+        avatar_url: null,
+      },
+      highest_bidder: null,
+    };
+
+    expect(auctionDetailsMapper(supabaseAuctionDetails)?.owner).toEqual({
+      id: VALID_UUID,
+      firstName: "John",
+      lastName: "Doe",
+      email: null,
+      avatarUrl: undefined,
+    });
+  });
 });
